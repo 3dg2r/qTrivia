@@ -128,6 +128,7 @@
 
 - (IBAction)skipButtonPressed:(id)sender {
     [self setUpNewQuestion];
+    timmerCounter -= 0.5f;
 }
 
 - (IBAction)answerButtonPressed:(id)sender {
