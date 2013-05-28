@@ -30,6 +30,13 @@
 }
 
 -(void)setUpNewQuestion {
+    NSArray *arrayOfImage = [[self.categoryArray objectAtIndex:counter] objectForKey:@"image_array"];
+    arrayOfImage = [self shuffleArray:arrayOfImage];
+    
+    self.triviaImage1.image = [UIImage imageNamed:[arrayOfImage objectAtIndex:0]];
+    self.triviaImage2.image = [UIImage imageNamed:[arrayOfImage objectAtIndex:1]];
+    self.triviaImage3.image = [UIImage imageNamed:[arrayOfImage objectAtIndex:2]];
+    self.triviaImage4.image = [UIImage imageNamed:[arrayOfImage objectAtIndex:3]];
     [self setUpAnswerArrays];
     counter ++;
 }
@@ -84,7 +91,17 @@
 }
 
 - (IBAction)answerButtonPressed:(id)sender {
-    [self setUpNewQuestion];
+    UIButton *button = (UIButton *)sender;
+    NSInteger buttonTag = button.tag - 100;
+    NSDictionary *dic = [self.answerList objectAtIndex:buttonTag];
+    NSInteger keyOfAnswerPicked = [[dic objectForKey:@"id"] integerValue];
+    NSInteger indexOfAnswer = [[[self.categoryArray objectAtIndex:counter-1] objectForKey:@"key_answer"] integerValue];
+    if (indexOfAnswer == keyOfAnswerPicked) {
+        [self setUpNewQuestion];
+    }
+    else {
+        
+    }
 }
 
 

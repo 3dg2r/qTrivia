@@ -5,67 +5,57 @@
 	<dict>
 		<key>image_array</key>
 		<array>
-			<string></string>
-			<string></string>
-			<string></string>
-			<string></string>
+			<string>bob_pettit.png</string>
+			<string>dominique_wilkins.png</string>
+			<string>lou_hudson.png</string>
+			<string>shareef.png</string>
 		</array>
 		<key>key_answer</key>
 		<string>0</string>
-		<key>id</key>
-		<string></string>
 	</dict>
 	<dict>
 		<key>image_array</key>
 		<array>
-			<string></string>
-			<string></string>
-			<string></string>
-			<string></string>
+			<string>dave_cowens.png</string>
+			<string>john_havlicek.png</string>
+			<string>kevin_mchale.png</string>
+			<string>robert_parish.png</string>
 		</array>
 		<key>key_answer</key>
 		<string>1</string>
-		<key>id</key>
-		<string></string>
 	</dict>
 	<dict>
 		<key>image_array</key>
 		<array>
-			<string></string>
-			<string></string>
-			<string></string>
-			<string></string>
+			<string>boris_diaw.png</string>
+			<string>dj_augustin.png</string>
+			<string>raymond_felton.png</string>
+			<string>stephen_jackson.png</string>
 		</array>
 		<key>key_answer</key>
 		<string>2</string>
-		<key>id</key>
-		<string></string>
 	</dict>
 	<dict>
 		<key>image_array</key>
 		<array>
-			<string></string>
-			<string></string>
-			<string></string>
-			<string></string>
+			<string>artis_gilmore.png</string>
+			<string>bob_love.png</string>
+			<string>horace_grant.png</string>
+			<string>jerry_sloan.png</string>
 		</array>
 		<key>key_answer</key>
 		<string>3</string>
-		<key>id</key>
-		<string></string>
 	</dict>
 	<dict>
 		<key>image_array</key>
 		<array>
-			<string></string>
-			<string></string>
-			<string></string>
-			<string></string>
+			<string>austin_carr.png</string>
+			<string>brad_daugherty.png</string>
+			<string>larry_nance.png</string>
+			<string>mark_price.png</string>
 		</array>
 		<key>key_answer</key>
 		<string>4</string>
-		<key>id</key>
-		<string></string>
 	</dict>
 </array>
 </plist>
