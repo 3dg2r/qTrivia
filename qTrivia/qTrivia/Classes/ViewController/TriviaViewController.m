@@ -26,8 +26,35 @@
     //shuffle category
     self.categoryArray = [self shuffleArray:self.categoryArray];
     counter = 0;
+    timmerCounter = 60.0f;
+    streak = 1;
+    score = 0;
+    self.timerLabel.text = [NSString stringWithFormat:@"%.2f",timmerCounter];
+    [self startCountdown];
     [self setUpNewQuestion];
 }
+
+#pragma mark - set up timer
+
+- (void)startCountdown
+{
+    [NSTimer scheduledTimerWithTimeInterval:0.03
+                                     target:self
+                                   selector:@selector(advanceTimer:)
+                                   userInfo:nil
+                                    repeats:YES];
+}
+
+- (void)advanceTimer:(NSTimer *)timer
+{
+    timmerCounter -= 0.03f;
+    self.timerLabel.text = [NSString stringWithFormat:@"%.2f",timmerCounter];
+    if (timmerCounter <= 0) { [timer invalidate]; }
+}
+
+
+
+#pragma mark - setup arrays
 
 -(void)setUpNewQuestion {
     NSArray *arrayOfImage = [[self.categoryArray objectAtIndex:counter] objectForKey:@"image_array"];
@@ -87,7 +114,7 @@
 }
 
 - (IBAction)skipButtonPressed:(id)sender {
-     [self setUpNewQuestion];
+    [self setUpNewQuestion];
 }
 
 - (IBAction)answerButtonPressed:(id)sender {
@@ -97,10 +124,14 @@
     NSInteger keyOfAnswerPicked = [[dic objectForKey:@"id"] integerValue];
     NSInteger indexOfAnswer = [[[self.categoryArray objectAtIndex:counter-1] objectForKey:@"key_answer"] integerValue];
     if (indexOfAnswer == keyOfAnswerPicked) {
+        score += 10*streak;
+        self.scoreLabel.text = [NSString stringWithFormat:@"%d",score];
+        streak += 1;
         [self setUpNewQuestion];
     }
     else {
-        
+        streak = 1;
+        timmerCounter -= 1.0f;
     }
 }
 

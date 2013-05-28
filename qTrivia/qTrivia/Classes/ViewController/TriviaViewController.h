@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface TriviaViewController : UIViewController {
-    int counter;
+    int counter,streak,score;
+    float timmerCounter;
 }
 
 @property (strong, nonatomic) NSDictionary *categoryDictionary;
