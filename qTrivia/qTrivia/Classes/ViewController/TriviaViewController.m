@@ -8,6 +8,7 @@
 
 #import "TriviaViewController.h"
 #import "PlistHelper.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface TriviaViewController ()
 @property (nonatomic,strong) NSArray *categoryArray;
@@ -26,9 +27,19 @@
     //shuffle category
     self.categoryArray = [self shuffleArray:self.categoryArray];
     counter = 0;
-    timmerCounter = 60.0f;
+    timmerCounter = 30.0f;
     streak = 1;
     score = 0;
+    
+    self.triviaImage1.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.triviaImage1.layer.borderWidth = 4;
+    self.triviaImage2.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.triviaImage2.layer.borderWidth = 4;
+    self.triviaImage3.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.triviaImage3.layer.borderWidth = 4;
+    self.triviaImage4.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.triviaImage4.layer.borderWidth = 4;
+    
     self.timerLabel.text = [NSString stringWithFormat:@"%.2f",timmerCounter];
     [self startCountdown];
     [self setUpNewQuestion];
@@ -38,7 +49,7 @@
 
 - (void)startCountdown
 {
-    [NSTimer scheduledTimerWithTimeInterval:0.03
+    gameTimer = [NSTimer scheduledTimerWithTimeInterval:0.03
                                      target:self
                                    selector:@selector(advanceTimer:)
                                    userInfo:nil
@@ -47,9 +58,11 @@
 
 - (void)advanceTimer:(NSTimer *)timer
 {
-    timmerCounter -= 0.03f;
-    self.timerLabel.text = [NSString stringWithFormat:@"%.2f",timmerCounter];
-    if (timmerCounter <= 0) { [timer invalidate]; }
+    if (!puase) {
+        timmerCounter -= 0.03f;
+        self.timerLabel.text = [NSString stringWithFormat:@"%.2f",timmerCounter];
+        if (timmerCounter <= 0) { [timer invalidate]; }
+    }
 }
 
 

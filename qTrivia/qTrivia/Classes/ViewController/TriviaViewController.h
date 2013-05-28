@@ -11,6 +11,8 @@
 @interface TriviaViewController : UIViewController {
     int counter,streak,score;
     float timmerCounter;
+    NSTimer *gameTimer;
+    BOOL puase;
 }
 
 @property (strong, nonatomic) NSDictionary *categoryDictionary;

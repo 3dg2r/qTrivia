@@ -46,6 +46,8 @@
 		C35ECD721754869400EE371B /* bob_love.png in Resources */ = {isa = PBXBuildFile; fileRef = C35ECD6A1754869400EE371B /* bob_love.png */; };
 		C35ECD731754869400EE371B /* horace_grant.png in Resources */ = {isa = PBXBuildFile; fileRef = C35ECD6B1754869400EE371B /* horace_grant.png */; };
 		C35ECD741754869400EE371B /* jerry_sloan.png in Resources */ = {isa = PBXBuildFile; fileRef = C35ECD6C1754869400EE371B /* jerry_sloan.png */; };
+		C35ECD7A17549C4700EE371B /* buttonImage.png in Resources */ = {isa = PBXBuildFile; fileRef = C35ECD7817549C4700EE371B /* buttonImage.png */; };
+		C35ECD7B17549C4700EE371B /* categoryImages_back.png in Resources */ = {isa = PBXBuildFile; fileRef = C35ECD7917549C4700EE371B /* categoryImages_back.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +99,8 @@
 		C35ECD6A1754869400EE371B /* bob_love.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bob_love.png; sourceTree = "<group>"; };
 		C35ECD6B1754869400EE371B /* horace_grant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horace_grant.png; sourceTree = "<group>"; };
 		C35ECD6C1754869400EE371B /* jerry_sloan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jerry_sloan.png; sourceTree = "<group>"; };
+		C35ECD7817549C4700EE371B /* buttonImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonImage.png; sourceTree = "<group>"; };
+		C35ECD7917549C4700EE371B /* categoryImages_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = categoryImages_back.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +259,7 @@
 		C35ECD46175481E700EE371B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C35ECD7717549C4500EE371B /* ProjectAssest */,
 				C35ECD47175481E700EE371B /* Sports */,
 			);
 			path = Resources;
@@ -325,6 +330,15 @@
 				C35ECD6C1754869400EE371B /* jerry_sloan.png */,
 			);
 			path = Chicago;
+			sourceTree = "<group>";
+		};
+		C35ECD7717549C4500EE371B /* ProjectAssest */ = {
+			isa = PBXGroup;
+			children = (
+				C35ECD7817549C4700EE371B /* buttonImage.png */,
+				C35ECD7917549C4700EE371B /* categoryImages_back.png */,
+			);
+			path = ProjectAssest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,6 +421,8 @@
 				C35ECD721754869400EE371B /* bob_love.png in Resources */,
 				C35ECD731754869400EE371B /* horace_grant.png in Resources */,
 				C35ECD741754869400EE371B /* jerry_sloan.png in Resources */,
+				C35ECD7A17549C4700EE371B /* buttonImage.png in Resources */,
+				C35ECD7B17549C4700EE371B /* categoryImages_back.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
