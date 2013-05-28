@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TriviaViewController : UIViewController
+@interface TriviaViewController : UIViewController {
+    int counter;
+}
 
 @property (strong, nonatomic) NSDictionary *categoryDictionary;
 

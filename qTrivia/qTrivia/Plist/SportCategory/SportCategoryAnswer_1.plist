@@ -4,33 +4,131 @@
 <array>
 	<dict>
 		<key>name</key>
-		<string></string>
-		<key>id</key>
-		<string></string>
+		<string>Atlanta Hawks</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string></string>
-		<key>id</key>
-		<string></string>
+		<string>Boston Celtics</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string></string>
-		<key>id</key>
-		<string></string>
+		<string>Charlotte Bobcats</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string></string>
-		<key>id</key>
-		<string></string>
+		<string>Chicago Bulls</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string></string>
-		<key>id</key>
-		<string></string>
+		<string>Cleveland Cavaliers</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Dallas Mavericks</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Denver Nuggets</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Detroit Pistons</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Golden State Warriors</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Houston Rockets</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Indiana Pacers</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>LA Clippers</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>LA Lakers</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Memphis Grizzlies</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Miami Heat</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Milwaukee Bucks</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Minnesota Timberwolves</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>New Jersey Nets</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>New Orleans Hornets</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>New York Knicks</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Oklahoma City Thunder</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Orlando Magic</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Philadelphia Sixers</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Phoenix Suns</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Portland Trail Blazers</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Sacramento Kings</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>San Antonio Spurs</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Toronto Raptors</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Utah Jazz</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Washington Wizards</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Seattle SuperSonics</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>San Diego Rockets</string>
 	</dict>
 </array>
 </plist>

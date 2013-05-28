@@ -26,15 +26,6 @@
 //        [randomNumberArray exchangeObjectAtIndex:j withObjectAtIndex:n];
 //    }
     
-//    int ar[5],i,d,tmp;
-//    for(i = 0; i < 5; i++) ar[i] = i+1;
-//    for(i = 0; i < 5; i++) {
-//        d = i + (random()%(5-i));
-//        tmp = ar[i];
-//        ar[i] = ar[d];
-//        ar[d] = tmp;
-//        NSLog(@"%d",ar[i]);
-//    }
     
 }
 
