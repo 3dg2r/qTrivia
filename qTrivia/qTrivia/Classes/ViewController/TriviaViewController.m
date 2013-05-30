@@ -27,7 +27,7 @@
     //shuffle category
     self.categoryArray = [self shuffleArray:self.categoryArray];
     counter = 0;
-    timmerCounter = 30.0f;
+    timmerCounter = 60.0f;
     streak = 1;
     score = 0;
     
@@ -87,18 +87,14 @@
     self.categoryListAnswerArray = [[PlistHelper getArray:categoryListAnswerPlistName]mutableCopy];
     
     NSInteger indexOfAnswer = [[[self.categoryArray objectAtIndex:counter] objectForKey:@"key_answer"] integerValue];
+    NSLog(@"%i",indexOfAnswer);
     NSDictionary *dicOfAnswer = [self.categoryListAnswerArray objectAtIndex:indexOfAnswer];
     [self.answerList addObject:dicOfAnswer];
     [self.categoryListAnswerArray removeObjectAtIndex:indexOfAnswer];
     
-    int ar[self.categoryListAnswerArray.count-1],i,d,tmp;
-    for(i = 0; i < self.categoryListAnswerArray.count-1; i++) ar[i] = i+1;
-    for(i = 0; i < 3; i++) {
-        d = i + (arc4random()%(self.categoryListAnswerArray.count-i));
-        tmp = ar[i];
-        ar[i] = ar[d];
-        ar[d] = tmp;
-        NSDictionary *dic = [self.categoryListAnswerArray objectAtIndex:ar[i]];
+    self.categoryListAnswerArray = [[self shuffleArray:self.categoryListAnswerArray]mutableCopy];
+    for(int i = 0; i < 3; i++) {
+        NSDictionary *dic = [self.categoryListAnswerArray objectAtIndex:i];
         [self.answerList addObject:dic];
     }
     self.answerList = [[self shuffleArray:self.answerList]mutableCopy];
