@@ -9,7 +9,7 @@
 #import "CategoryListViewController.h"
 #import "PlistHelper.h"
 #import "CategoryListCell.h"
-#import "TriviaViewController.h"
+#import "SelectGameModeViewController.h"
 
 @interface CategoryListViewController ()
 @property (nonatomic,strong) NSArray *categoryList;
@@ -48,13 +48,13 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self performSegueWithIdentifier:@"showTriviaView" sender:self];
+    [self performSegueWithIdentifier:@"goToSelectGameMode" sender:self];
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-    TriviaViewController *controller = segue.destinationViewController;
-    controller.categoryDictionary = [self.categoryList objectAtIndex:indexPath.row];
+    SelectGameModeViewController *controller = segue.destinationViewController;
+    controller.dictionary = [self.categoryList objectAtIndex:indexPath.row];
 }
 
 - (void)viewDidUnload {

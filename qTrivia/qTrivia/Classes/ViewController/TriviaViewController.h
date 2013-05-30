@@ -9,8 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "NSMutableArray+Shuffling.h"
 
+typedef enum {
+	GameModeTimeAttack = 0,
+	GameModeSurvival,
+	GameModeRelax,
+} GameMode;
+
 @interface TriviaViewController : UIViewController {
-    int counter,streak,score;
+    int counter,streak,score,numOfLife;
     float timmerCounter;
     NSTimer *gameTimer;
     BOOL puase;
@@ -30,4 +36,9 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timerLabel;
+@property (weak, nonatomic) IBOutlet UILabel *numberOfLifesTextLabel;
+@property (weak, nonatomic) IBOutlet UILabel *numberOfLife;
+
+@property (weak, nonatomic) IBOutlet UIButton *skipButton;
+@property (nonatomic) GameMode gameMode;
 @end

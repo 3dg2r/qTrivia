@@ -31,6 +31,7 @@
     timmerCounter = 60.0f;
     streak = 1;
     score = 0;
+    numOfLife = 5;
     
     self.triviaImage1.layer.borderColor = [UIColor lightGrayColor].CGColor;
     self.triviaImage1.layer.borderWidth = 4;
@@ -41,8 +42,27 @@
     self.triviaImage4.layer.borderColor = [UIColor lightGrayColor].CGColor;
     self.triviaImage4.layer.borderWidth = 4;
     
-    self.timerLabel.text = [NSString stringWithFormat:@"%.2f",timmerCounter];
-    [self startCountdown];
+    switch (self.gameMode) {
+        case GameModeTimeAttack:
+            self.numberOfLifesTextLabel.hidden = YES;
+            self.numberOfLife.hidden = YES;
+            self.timerLabel.text = [NSString stringWithFormat:@"%.2f",timmerCounter];
+            [self startCountdown];
+            break;
+        case GameModeSurvival:
+            self.numberOfLifesTextLabel.hidden = YES;
+            self.numberOfLife.hidden = YES;
+            self.timerLabel.text = [NSString stringWithFormat:@"%.2f",timmerCounter];
+            [self startCountdown];
+            break;
+        case GameModeRelax:
+            self.timerLabel.hidden = YES;
+            self.numberOfLife.text = [NSString stringWithFormat:@"%d",numOfLife];
+            break;
+        default:
+            break;
+    }
+
     [self setUpNewQuestion];
 }
 
@@ -119,7 +139,25 @@
 
 - (IBAction)skipButtonPressed:(id)sender {
     [self setUpNewQuestion];
-    timmerCounter -= 0.5f;
+    
+    switch (self.gameMode) {
+        case GameModeTimeAttack:
+            timmerCounter -= 0.5f;
+            break;
+        case GameModeSurvival:
+            timmerCounter -= 0.5f;
+            break;
+        case GameModeRelax:
+            numOfLife -= 1;
+            if (numOfLife == 1) {
+                self.skipButton.hidden = YES;
+            }
+            self.numberOfLife.text = [NSString stringWithFormat:@"%d",numOfLife];
+        
+            break;
+        default:
+            break;
+    }
 }
 
 - (IBAction)answerButtonPressed:(id)sender {
@@ -129,6 +167,14 @@
     NSInteger keyOfAnswerPicked = [[dic objectForKey:@"id"] integerValue];
     NSInteger indexOfAnswer = [[[self.categoryArray objectAtIndex:counter-1] objectForKey:@"key_answer"] integerValue];
     if (indexOfAnswer == keyOfAnswerPicked) {
+        switch (self.gameMode) {
+            case GameModeSurvival:
+                timmerCounter += 1.0f;
+                break;
+            default:
+                break;
+        }
+
         score += 10*streak;
         self.scoreLabel.text = [NSString stringWithFormat:@"%d",score];
         streak += 1;
@@ -136,7 +182,26 @@
     }
     else {
         streak = 1;
-        timmerCounter -= 1.0f;
+        switch (self.gameMode) {
+            case GameModeTimeAttack:
+                timmerCounter -= 1.0f;
+                break;
+            case GameModeSurvival:
+                timmerCounter -= 1.0f;
+                break;
+            case GameModeRelax:
+                numOfLife -= 1;
+                if (numOfLife == 0) {
+                     [self performSegueWithIdentifier:@"goToScoreVC" sender:self];
+                }
+                else if (numOfLife == 1) {
+                    self.skipButton.hidden = YES;
+                }
+                self.numberOfLife.text = [NSString stringWithFormat:@"%d",numOfLife];
+                break;
+            default:
+                break;
+        }
     }
 }
 
@@ -152,6 +217,9 @@
     [self setTriviaAnswer4:nil];
     [self setTimerLabel:nil];
     [self setScoreLabel:nil];
+    [self setNumberOfLifesTextLabel:nil];
+    [self setNumberOfLife:nil];
+    [self setSkipButton:nil];
     [super viewDidUnload];
 }
 @end
