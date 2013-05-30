@@ -11,7 +11,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 @interface TriviaViewController ()
-@property (nonatomic,strong) NSArray *categoryArray;
+@property (nonatomic,strong) NSMutableArray *categoryArray;
 @property (nonatomic,strong) NSMutableArray *categoryListAnswerArray;
 @property (nonatomic,strong) NSMutableArray *answerList;
 @end
@@ -23,9 +23,9 @@
     [super viewDidLoad];
     self.answerList = [[NSMutableArray alloc]init];
     NSString *categoryPlistName = [NSString stringWithFormat:@"%@_1",[self.categoryDictionary objectForKey:@"unique_id"]];
-    self.categoryArray = [PlistHelper getArray:categoryPlistName];
+    self.categoryArray = [[PlistHelper getArray:categoryPlistName]mutableCopy];
     //shuffle category
-    self.categoryArray = [self shuffleArray:self.categoryArray];
+    [self.categoryArray shuffle];
     counter = 0;
     timmerCounter = 60.0f;
     streak = 1;
@@ -70,8 +70,8 @@
 #pragma mark - setup arrays
 
 -(void)setUpNewQuestion {
-    NSArray *arrayOfImage = [[self.categoryArray objectAtIndex:counter] objectForKey:@"image_array"];
-    arrayOfImage = [self shuffleArray:arrayOfImage];
+    NSMutableArray *arrayOfImage = [[self.categoryArray objectAtIndex:counter] objectForKey:@"image_array"];
+    [arrayOfImage shuffle];
     
     self.triviaImage1.image = [UIImage imageNamed:[arrayOfImage objectAtIndex:0]];
     self.triviaImage2.image = [UIImage imageNamed:[arrayOfImage objectAtIndex:1]];
@@ -92,29 +92,16 @@
     [self.answerList addObject:dicOfAnswer];
     [self.categoryListAnswerArray removeObjectAtIndex:indexOfAnswer];
     
-    self.categoryListAnswerArray = [[self shuffleArray:self.categoryListAnswerArray]mutableCopy];
+    [self.categoryListAnswerArray shuffle];
     for(int i = 0; i < 3; i++) {
         NSDictionary *dic = [self.categoryListAnswerArray objectAtIndex:i];
         [self.answerList addObject:dic];
     }
-    self.answerList = [[self shuffleArray:self.answerList]mutableCopy];
+    [self.answerList shuffle];
     [self.triviaAnswer1 setTitle:[[self.answerList objectAtIndex:0] objectForKey:@"name"] forState:UIControlStateNormal];
     [self.triviaAnswer2 setTitle:[[self.answerList objectAtIndex:1] objectForKey:@"name"] forState:UIControlStateNormal];
     [self.triviaAnswer3 setTitle:[[self.answerList objectAtIndex:2] objectForKey:@"name"] forState:UIControlStateNormal];
     [self.triviaAnswer4 setTitle:[[self.answerList objectAtIndex:3] objectForKey:@"name"] forState:UIControlStateNormal];
-}
-
-
-- (NSArray *)shuffleArray:(NSArray *)array{
-    NSMutableArray *listArray = [[NSMutableArray alloc]initWithArray:array];
-    id temp;
-    for (int x=listArray.count-1; x>=0; x--) {
-        int i = 1 + arc4random() % ((array.count-1)-1);
-        temp = listArray[i];
-        listArray[i] = listArray[i-1];
-        listArray[i-1] = temp;
-    }
-    return [[NSArray alloc]initWithArray:listArray];
 }
 
 #pragma mark - button pressed

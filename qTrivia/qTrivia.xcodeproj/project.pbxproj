@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7AF0A1A0175747C7007F3E71 /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF0A19F175747C7007F3E71 /* NSMutableArray+Shuffling.m */; };
 		7AFFF84B174FCC7000C1D4D8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFFF84A174FCC7000C1D4D8 /* UIKit.framework */; };
 		7AFFF84D174FCC7000C1D4D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFFF84C174FCC7000C1D4D8 /* Foundation.framework */; };
 		7AFFF84F174FCC7000C1D4D8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFFF84E174FCC7000C1D4D8 /* CoreGraphics.framework */; };
@@ -166,6 +167,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7AF0A19E175747C7007F3E71 /* NSMutableArray+Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Shuffling.h"; sourceTree = "<group>"; };
+		7AF0A19F175747C7007F3E71 /* NSMutableArray+Shuffling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Shuffling.m"; sourceTree = "<group>"; };
 		7AFFF847174FCC7000C1D4D8 /* qTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AFFF84A174FCC7000C1D4D8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7AFFF84C174FCC7000C1D4D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -347,6 +350,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7AF0A19D175747C7007F3E71 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				7AF0A19E175747C7007F3E71 /* NSMutableArray+Shuffling.h */,
+				7AF0A19F175747C7007F3E71 /* NSMutableArray+Shuffling.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		7AFFF83E174FCC7000C1D4D8 = {
 			isa = PBXGroup;
 			children = (
@@ -435,6 +447,7 @@
 		7AFFF87C174FCF6500C1D4D8 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				7AF0A19D175747C7007F3E71 /* Category */,
 				7AFFF884174FD0B400C1D4D8 /* Cell */,
 				7AFFF880174FD01900C1D4D8 /* Helper */,
 			);
@@ -860,6 +873,7 @@
 				7AFFF883174FD01900C1D4D8 /* PlistHelper.m in Sources */,
 				7AFFF887174FD0D300C1D4D8 /* CategoryListCell.m in Sources */,
 				7AFFF890174FDC0200C1D4D8 /* TriviaViewController.m in Sources */,
+				7AF0A1A0175747C7007F3E71 /* NSMutableArray+Shuffling.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

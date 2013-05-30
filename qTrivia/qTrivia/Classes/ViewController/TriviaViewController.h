@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NSMutableArray+Shuffling.h"
 
 @interface TriviaViewController : UIViewController {
     int counter,streak,score;
