@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7AF0A1A0175747C7007F3E71 /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF0A19F175747C7007F3E71 /* NSMutableArray+Shuffling.m */; };
+		7AF0A1A317574E05007F3E71 /* ScoreListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF0A1A217574E05007F3E71 /* ScoreListViewController.m */; };
 		7AFFF84B174FCC7000C1D4D8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFFF84A174FCC7000C1D4D8 /* UIKit.framework */; };
 		7AFFF84D174FCC7000C1D4D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFFF84C174FCC7000C1D4D8 /* Foundation.framework */; };
 		7AFFF84F174FCC7000C1D4D8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFFF84E174FCC7000C1D4D8 /* CoreGraphics.framework */; };
@@ -169,6 +170,8 @@
 /* Begin PBXFileReference section */
 		7AF0A19E175747C7007F3E71 /* NSMutableArray+Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Shuffling.h"; sourceTree = "<group>"; };
 		7AF0A19F175747C7007F3E71 /* NSMutableArray+Shuffling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Shuffling.m"; sourceTree = "<group>"; };
+		7AF0A1A117574E04007F3E71 /* ScoreListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreListViewController.h; sourceTree = "<group>"; };
+		7AF0A1A217574E05007F3E71 /* ScoreListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreListViewController.m; sourceTree = "<group>"; };
 		7AFFF847174FCC7000C1D4D8 /* qTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AFFF84A174FCC7000C1D4D8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7AFFF84C174FCC7000C1D4D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -440,6 +443,8 @@
 				7AFFF87A174FCEE900C1D4D8 /* CategoryListViewController.m */,
 				7AFFF88E174FDC0200C1D4D8 /* TriviaViewController.h */,
 				7AFFF88F174FDC0200C1D4D8 /* TriviaViewController.m */,
+				7AF0A1A117574E04007F3E71 /* ScoreListViewController.h */,
+				7AF0A1A217574E05007F3E71 /* ScoreListViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -874,6 +879,7 @@
 				7AFFF887174FD0D300C1D4D8 /* CategoryListCell.m in Sources */,
 				7AFFF890174FDC0200C1D4D8 /* TriviaViewController.m in Sources */,
 				7AF0A1A0175747C7007F3E71 /* NSMutableArray+Shuffling.m in Sources */,
+				7AF0A1A317574E05007F3E71 /* ScoreListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

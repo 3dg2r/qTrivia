@@ -9,6 +9,7 @@
 #import "TriviaViewController.h"
 #import "PlistHelper.h"
 #import <QuartzCore/QuartzCore.h>
+#import "ScoreListViewController.h"
 
 @interface TriviaViewController ()
 @property (nonatomic,strong) NSMutableArray *categoryArray;
@@ -61,10 +62,18 @@
     if (!puase) {
         timmerCounter -= 0.03f;
         self.timerLabel.text = [NSString stringWithFormat:@"%.2f",timmerCounter];
-        if (timmerCounter <= 0) { [timer invalidate]; }
+        if (timmerCounter <= 0) {
+            [timer invalidate];
+            [self performSegueWithIdentifier:@"goToScoreVC" sender:self];
+        }
     }
 }
 
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    ScoreListViewController *controller = segue.destinationViewController;
+    controller.score = [NSString stringWithFormat:@"%d",score];
+}
 
 
 #pragma mark - setup arrays
