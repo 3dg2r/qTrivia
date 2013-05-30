@@ -70,7 +70,7 @@
 #pragma mark - setup arrays
 
 -(void)setUpNewQuestion {
-    NSMutableArray *arrayOfImage = [[self.categoryArray objectAtIndex:counter] objectForKey:@"image_array"];
+    NSMutableArray *arrayOfImage = [[[self.categoryArray objectAtIndex:counter] objectForKey:@"image_array"]mutableCopy];
     [arrayOfImage shuffle];
     
     self.triviaImage1.image = [UIImage imageNamed:[arrayOfImage objectAtIndex:0]];
@@ -87,7 +87,6 @@
     self.categoryListAnswerArray = [[PlistHelper getArray:categoryListAnswerPlistName]mutableCopy];
     
     NSInteger indexOfAnswer = [[[self.categoryArray objectAtIndex:counter] objectForKey:@"key_answer"] integerValue];
-    NSLog(@"%i",indexOfAnswer);
     NSDictionary *dicOfAnswer = [self.categoryListAnswerArray objectAtIndex:indexOfAnswer];
     [self.answerList addObject:dicOfAnswer];
     [self.categoryListAnswerArray removeObjectAtIndex:indexOfAnswer];
