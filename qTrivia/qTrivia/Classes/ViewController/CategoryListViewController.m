@@ -23,6 +23,11 @@
 	// Do any additional setup after loading the view.
     self.categoryList = [PlistHelper getArray:@"CategoryList"];
 }
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
+}
 - (IBAction)backButtonPressed:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }

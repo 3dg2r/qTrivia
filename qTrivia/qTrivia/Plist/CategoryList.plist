@@ -16,9 +16,11 @@
 		<key>title</key>
 		<string>Places</string>
 		<key>unique_id</key>
-		<integer>1</integer>
+		<string>PlaceCategory</string>
 		<key>image_name</key>
 		<string></string>
+		<key>numberOfPlist</key>
+		<string>1</string>
 	</dict>
 </array>
 </plist>

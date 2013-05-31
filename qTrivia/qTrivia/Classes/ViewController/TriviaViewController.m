@@ -11,6 +11,10 @@
 #import <QuartzCore/QuartzCore.h>
 #import "ScoreListViewController.h"
 
+#define TIMER 60.0f
+#define NUMOFLIFE 3
+
+
 @interface TriviaViewController ()
 @property (nonatomic,strong) NSMutableArray *categoryArray;
 @property (nonatomic,strong) NSMutableArray *categoryListAnswerArray;
@@ -28,10 +32,10 @@
     //shuffle category
     [self.categoryArray shuffle];
     counter = 0;
-    timmerCounter = 60.0f;
+    timmerCounter = TIMER;
     streak = 1;
     score = 0;
-    numOfLife = 5;
+    numOfLife = NUMOFLIFE;
     
     self.triviaImage1.layer.borderColor = [UIColor lightGrayColor].CGColor;
     self.triviaImage1.layer.borderWidth = 4;
@@ -93,21 +97,50 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     ScoreListViewController *controller = segue.destinationViewController;
     controller.score = [NSString stringWithFormat:@"%d",score];
+    if (timmerCounter < 0) {
+        timmerCounter = 0;
+    }
+    if (numOfLife < 0) {
+        numOfLife = 0;
+    }
+    
+    int bonusScore = timmerCounter;
+    switch (self.gameMode) {
+        case GameModeTimeAttack:
+            
+            controller.bonusScore = [NSString stringWithFormat:@"%d",bonusScore *10];
+            break;
+        case GameModeSurvival:
+            controller.bonusScore = [NSString stringWithFormat:@"%d",bonusScore *10];
+            break;
+        case GameModeRelax:
+            controller.bonusScore = [NSString stringWithFormat:@"%d",numOfLife *100];
+            
+            break;
+        default:
+            break;
+    }
+    
 }
 
 
 #pragma mark - setup arrays
 
 -(void)setUpNewQuestion {
-    NSMutableArray *arrayOfImage = [[[self.categoryArray objectAtIndex:counter] objectForKey:@"image_array"]mutableCopy];
-    [arrayOfImage shuffle];
-    
-    self.triviaImage1.image = [UIImage imageNamed:[arrayOfImage objectAtIndex:0]];
-    self.triviaImage2.image = [UIImage imageNamed:[arrayOfImage objectAtIndex:1]];
-    self.triviaImage3.image = [UIImage imageNamed:[arrayOfImage objectAtIndex:2]];
-    self.triviaImage4.image = [UIImage imageNamed:[arrayOfImage objectAtIndex:3]];
-    [self setUpAnswerArrays];
-    counter ++;
+    if (counter == 100) {
+        [self performSegueWithIdentifier:@"goToScoreVC" sender:self];
+    }
+    else {
+        NSMutableArray *arrayOfImage = [[[self.categoryArray objectAtIndex:counter] objectForKey:@"image_array"]mutableCopy];
+        [arrayOfImage shuffle];
+        
+        self.triviaImage1.image = [UIImage imageNamed:[arrayOfImage objectAtIndex:0]];
+        self.triviaImage2.image = [UIImage imageNamed:[arrayOfImage objectAtIndex:1]];
+        self.triviaImage3.image = [UIImage imageNamed:[arrayOfImage objectAtIndex:2]];
+        self.triviaImage4.image = [UIImage imageNamed:[arrayOfImage objectAtIndex:3]];
+        [self setUpAnswerArrays];
+        counter ++;
+    }
 }
 
 -(void)setUpAnswerArrays {
