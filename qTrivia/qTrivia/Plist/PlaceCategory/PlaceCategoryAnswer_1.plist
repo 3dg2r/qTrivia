@@ -4,51 +4,603 @@
 <array>
 	<dict>
 		<key>name</key>
-		<string>Afghanistan</string>
+		<string>London, England</string>
 		<key>id</key>
 		<string>0</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Albania</string>
+		<string>New York, United States of America</string>
 		<key>id</key>
 		<string>1</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Algeria</string>
+		<string>Paris, France</string>
 		<key>id</key>
 		<string>2</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Andorra</string>
+		<string>Prague, Czech Republic</string>
 		<key>id</key>
 		<string>3</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Angola</string>
+		<string>Krakow, Poland</string>
 		<key>id</key>
 		<string>4</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Antigua and Barbuda</string>
+		<string>Berlin, Germany</string>
 		<key>id</key>
 		<string>5</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Argentina</string>
+		<string>Edinburgh, Scotland</string>
 		<key>id</key>
 		<string>6</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Argentina</string>
+		<string>Sydney, Australia</string>
 		<key>id</key>
-		<string>6</string>
+		<string>7</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Munich, Germany</string>
+		<key>id</key>
+		<string>8</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Amsterdam, Netherlands</string>
+		<key>id</key>
+		<string>9</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Dublin, Ireland</string>
+		<key>id</key>
+		<string>10</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Barcelona, Spain</string>
+		<key>id</key>
+		<string>11</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Reykjavik, Iceland</string>
+		<key>id</key>
+		<string>12</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Rome, Italy</string>
+		<key>id</key>
+		<string>13</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Las Vegas, United States of America</string>
+		<key>id</key>
+		<string>14</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Venice, Italy</string>
+		<key>id</key>
+		<string>15</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Dubrovnik, Croatia</string>
+		<key>id</key>
+		<string>16</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Marrakesh, Morocco</string>
+		<key>id</key>
+		<string>17</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Bangkok, Thailand</string>
+		<key>id</key>
+		<string>18</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Stockholm, Sweden</string>
+		<key>id</key>
+		<string>19</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Honolulu, United States of America</string>
+		<key>id</key>
+		<string>20</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Vienna, Austria</string>
+		<key>id</key>
+		<string>21</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Queenstown, New Zealand</string>
+		<key>id</key>
+		<string>22</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Cairns, Australia</string>
+		<key>id</key>
+		<string>23</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Melbourne, Australia</string>
+		<key>id</key>
+		<string>24</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Santorini, Greece</string>
+		<key>id</key>
+		<string>25</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Vancouver, Canada</string>
+		<key>id</key>
+		<string>26</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Istanbul, Turkey</string>
+		<key>id</key>
+		<string>27</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Athens, Greece</string>
+		<key>id</key>
+		<string>28</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Copenhagen, Denmark</string>
+		<key>id</key>
+		<string>29</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Cinque Terra, Italy</string>
+		<key>id</key>
+		<string>30</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>San Francisco, United States of America</string>
+		<key>id</key>
+		<string>31</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Florence, Italy</string>
+		<key>id</key>
+		<string>32</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Brugge, Belgium</string>
+		<key>id</key>
+		<string>33</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Whistler, Canada</string>
+		<key>id</key>
+		<string>34</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Beijing, China</string>
+		<key>id</key>
+		<string>35</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Los Angeles, United States of America</string>
+		<key>id</key>
+		<string>36</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Singapore City, Singapore</string>
+		<key>id</key>
+		<string>37</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Split, Croatia</string>
+		<key>id</key>
+		<string>38</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Tokyo, Japan</string>
+		<key>id</key>
+		<string>39</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Salzburg, Austria</string>
+		<key>id</key>
+		<string>40</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Lisbon, Portugal</string>
+		<key>id</key>
+		<string>41</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Bled, Slovenia</string>
+		<key>id</key>
+		<string>42</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Lagos, Portugal</string>
+		<key>id</key>
+		<string>43</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Hong Kong, China</string>
+		<key>id</key>
+		<string>44</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Brussels, Belgium</string>
+		<key>id</key>
+		<string>45</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Dubai, United Arab Emirates</string>
+		<key>id</key>
+		<string>46</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Madrid, Spain</string>
+		<key>id</key>
+		<string>47</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Chiang Mai, Thailand</string>
+		<key>id</key>
+		<string>48</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Brisbane, Australia</string>
+		<key>id</key>
+		<string>49</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Bath, England</string>
+		<key>id</key>
+		<string>50</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Oslo, Norway</string>
+		<key>id</key>
+		<string>51</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Buenos Aires, Argentina</string>
+		<key>id</key>
+		<string>52</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Kuala Lumpur, Malaysia</string>
+		<key>id</key>
+		<string>53</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Perth, Australia</string>
+		<key>id</key>
+		<string>54</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Ios, Greece</string>
+		<key>id</key>
+		<string>55</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Hanoi, Vietnam</string>
+		<key>id</key>
+		<string>56</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Budapest, Hungary</string>
+		<key>id</key>
+		<string>57</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Havana, Cuba</string>
+		<key>id</key>
+		<string>58</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Koh Samui, Thailand</string>
+		<key>id</key>
+		<string>59</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Wimbledon, England</string>
+		<key>id</key>
+		<string>60</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>La Paz, Bolivia</string>
+		<key>id</key>
+		<string>61</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Cape Town, South Africa</string>
+		<key>id</key>
+		<string>62</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Brighton, England</string>
+		<key>id</key>
+		<string>63</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Dahab, Egypt</string>
+		<key>id</key>
+		<string>64</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Riga, Latvia</string>
+		<key>id</key>
+		<string>65</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Ibiza, Spain</string>
+		<key>id</key>
+		<string>66</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>San Sebastian, Spain</string>
+		<key>id</key>
+		<string>67</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Nice, France</string>
+		<key>id</key>
+		<string>68</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Banff, Canada</string>
+		<key>id</key>
+		<string>69</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Luang Prabang, Laos</string>
+		<key>id</key>
+		<string>70</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Christchurch, New Zealand</string>
+		<key>id</key>
+		<string>71</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Cologne, Germany</string>
+		<key>id</key>
+		<string>72</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Koh Tao, Thailand</string>
+		<key>id</key>
+		<string>73</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Moscow, Russia</string>
+		<key>id</key>
+		<string>74</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Koh Phangan, Thailand</string>
+		<key>id</key>
+		<string>75</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Nadi, Fiji</string>
+		<key>id</key>
+		<string>76</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Siem Reap, Cambodia</string>
+		<key>id</key>
+		<string>77</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Rio de Janeiro, Brazil</string>
+		<key>id</key>
+		<string>78</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Mykonos, Greece</string>
+		<key>id</key>
+		<string>79</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Kruger National Park, South Africa</string>
+		<key>id</key>
+		<string>80</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Adelaide, Australia</string>
+		<key>id</key>
+		<string>81</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Seattle, United States of America</string>
+		<key>id</key>
+		<string>82</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Auckland, New Zealand</string>
+		<key>id</key>
+		<string>83</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Galway, Ireland</string>
+		<key>id</key>
+		<string>84</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Hvar Island, Croatia</string>
+		<key>id</key>
+		<string>85</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Phuket, Thailand</string>
+		<key>id</key>
+		<string>86</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Tallinn, Estonia</string>
+		<key>id</key>
+		<string>87</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Belfast, Northern Ireland</string>
+		<key>id</key>
+		<string>88</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Machu Picchu, Peru</string>
+		<key>id</key>
+		<string>89</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Bad Gastein, Austria</string>
+		<key>id</key>
+		<string>90</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Valencia, Spain</string>
+		<key>id</key>
+		<string>91</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Cappadocia, Turkey</string>
+		<key>id</key>
+		<string>92</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Gallipoli, Turkey</string>
+		<key>id</key>
+		<string>93</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Ljubljana, Slovenia</string>
+		<key>id</key>
+		<string>94</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Granada, Spain</string>
+		<key>id</key>
+		<string>95</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Toronto, Canada</string>
+		<key>id</key>
+		<string>96</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Uluru, Australia</string>
+		<key>id</key>
+		<string>97</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Zurich, Switzerland</string>
+		<key>id</key>
+		<string>98</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Xian, China</string>
+		<key>id</key>
+		<string>99</string>
 	</dict>
 </array>
 </plist>
