@@ -10,6 +10,8 @@
 		7AF0A1A0175747C7007F3E71 /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF0A19F175747C7007F3E71 /* NSMutableArray+Shuffling.m */; };
 		7AF0A1A317574E05007F3E71 /* ScoreListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF0A1A217574E05007F3E71 /* ScoreListViewController.m */; };
 		7AF0A1A6175751FB007F3E71 /* SelectGameModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF0A1A5175751FB007F3E71 /* SelectGameModeViewController.m */; };
+		7AF0A1B717578F26007F3E71 /* PlaceCategory_1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7AF0A1B617578F26007F3E71 /* PlaceCategory_1.plist */; };
+		7AF0A1B917578F43007F3E71 /* PlaceCategoryAnswer_1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7AF0A1B817578F43007F3E71 /* PlaceCategoryAnswer_1.plist */; };
 		7AFFF84B174FCC7000C1D4D8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFFF84A174FCC7000C1D4D8 /* UIKit.framework */; };
 		7AFFF84D174FCC7000C1D4D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFFF84C174FCC7000C1D4D8 /* Foundation.framework */; };
 		7AFFF84F174FCC7000C1D4D8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFFF84E174FCC7000C1D4D8 /* CoreGraphics.framework */; };
@@ -175,6 +177,8 @@
 		7AF0A1A217574E05007F3E71 /* ScoreListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreListViewController.m; sourceTree = "<group>"; };
 		7AF0A1A4175751FB007F3E71 /* SelectGameModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectGameModeViewController.h; sourceTree = "<group>"; };
 		7AF0A1A5175751FB007F3E71 /* SelectGameModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectGameModeViewController.m; sourceTree = "<group>"; };
+		7AF0A1B617578F26007F3E71 /* PlaceCategory_1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PlaceCategory_1.plist; sourceTree = "<group>"; };
+		7AF0A1B817578F43007F3E71 /* PlaceCategoryAnswer_1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PlaceCategoryAnswer_1.plist; sourceTree = "<group>"; };
 		7AFFF847174FCC7000C1D4D8 /* qTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AFFF84A174FCC7000C1D4D8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7AFFF84C174FCC7000C1D4D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -365,6 +369,15 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		7AF0A1B517578F18007F3E71 /* PlaceCategory */ = {
+			isa = PBXGroup;
+			children = (
+				7AF0A1B617578F26007F3E71 /* PlaceCategory_1.plist */,
+				7AF0A1B817578F43007F3E71 /* PlaceCategoryAnswer_1.plist */,
+			);
+			path = PlaceCategory;
+			sourceTree = "<group>";
+		};
 		7AFFF83E174FCC7000C1D4D8 = {
 			isa = PBXGroup;
 			children = (
@@ -467,7 +480,7 @@
 		7AFFF87D174FCF6500C1D4D8 /* Plist */ = {
 			isa = PBXGroup;
 			children = (
-				7AFFF88A174FD6E900C1D4D8 /* PlaceCategory */,
+				7AF0A1B517578F18007F3E71 /* PlaceCategory */,
 				7AFFF88B174FD6E900C1D4D8 /* SportCategory */,
 				7AFFF87E174FCF9600C1D4D8 /* CategoryList.plist */,
 			);
@@ -491,13 +504,6 @@
 				7AFFF888174FD0FB00C1D4D8 /* CategoryListCell.xib */,
 			);
 			path = Cell;
-			sourceTree = "<group>";
-		};
-		7AFFF88A174FD6E900C1D4D8 /* PlaceCategory */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PlaceCategory;
 			sourceTree = "<group>";
 		};
 		7AFFF88B174FD6E900C1D4D8 /* SportCategory */ = {
@@ -866,6 +872,8 @@
 				C3811CC9175604C800353430 /* vlade-divac.png in Resources */,
 				C3811CCA175604C800353430 /* walt-bellamy.png in Resources */,
 				C3811CCB175604C800353430 /* wilt-chamberlain.png in Resources */,
+				7AF0A1B717578F26007F3E71 /* PlaceCategory_1.plist in Resources */,
+				7AF0A1B917578F43007F3E71 /* PlaceCategoryAnswer_1.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

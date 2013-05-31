@@ -169,7 +169,7 @@
     if (indexOfAnswer == keyOfAnswerPicked) {
         switch (self.gameMode) {
             case GameModeSurvival:
-                timmerCounter += 1.0f;
+                timmerCounter += 2.0f;
                 break;
             default:
                 break;
