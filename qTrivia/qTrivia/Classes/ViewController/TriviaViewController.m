@@ -127,7 +127,7 @@
 #pragma mark - setup arrays
 
 -(void)setUpNewQuestion {
-    if (counter == 100) {
+    if (counter == self.categoryArray.count) {
         [self performSegueWithIdentifier:@"goToScoreVC" sender:self];
     }
     else {
