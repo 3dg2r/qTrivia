@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C3103" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="G7X-zk-5fb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12B2080" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="G7X-zk-5fb">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -249,7 +249,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" id="Mzr-8f-LZK">
-                                <rect key="frame" x="45" y="57" width="230" height="230"/>
+                                <rect key="frame" x="45" y="53" width="230" height="230"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="categoryImages_back.png" id="OqQ-fV-Vln">
@@ -276,14 +276,14 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" id="bne-zr-2yV">
-                                <rect key="frame" x="40" y="295" width="240" height="153"/>
+                                <rect key="frame" x="40" y="288" width="240" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="b2y-VU-gAK">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="25"/>
+                                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="b2y-VU-gAK">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                        <state key="normal" backgroundImage="buttonImage.png">
+                                        <state key="normal" backgroundImage="button_blueline.png">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -291,14 +291,14 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="answerButtonPressed:" destination="jI1-Tt-Fis" eventType="touchUpInside" id="t1v-Le-Htv"/>
+                                            <action selector="answerPressed:" destination="jI1-Tt-Fis" eventType="touchDown" id="ylB-Rd-JdY"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NdC-hn-g4h">
-                                        <rect key="frame" x="0.0" y="31" width="240" height="25"/>
+                                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="NdC-hn-g4h">
+                                        <rect key="frame" x="0.0" y="32" width="240" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                        <state key="normal" backgroundImage="buttonImage.png">
+                                        <state key="normal" backgroundImage="button_blueline.png">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -306,14 +306,14 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="answerButtonPressed:" destination="jI1-Tt-Fis" eventType="touchUpInside" id="3X4-gC-QDc"/>
+                                            <action selector="answerPressed:" destination="jI1-Tt-Fis" eventType="touchDown" id="DDg-ob-UfI"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="auh-ss-T91">
-                                        <rect key="frame" x="0.0" y="63" width="240" height="25"/>
+                                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="auh-ss-T91">
+                                        <rect key="frame" x="0.0" y="65" width="240" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                        <state key="normal" backgroundImage="buttonImage.png">
+                                        <state key="normal" backgroundImage="button_blueline.png">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -321,14 +321,14 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="answerButtonPressed:" destination="jI1-Tt-Fis" eventType="touchUpInside" id="7fG-C2-DGV"/>
+                                            <action selector="answerPressed:" destination="jI1-Tt-Fis" eventType="touchDown" id="ltL-B8-fEu"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cBc-64-gki">
-                                        <rect key="frame" x="0.0" y="96" width="240" height="25"/>
+                                    <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="cBc-64-gki">
+                                        <rect key="frame" x="0.0" y="97" width="240" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                        <state key="normal" backgroundImage="buttonImage.png">
+                                        <state key="normal" backgroundImage="button_blueline.png">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -336,19 +336,19 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="answerButtonPressed:" destination="jI1-Tt-Fis" eventType="touchUpInside" id="6f0-dx-TgG"/>
+                                            <action selector="answerPressed:" destination="jI1-Tt-Fis" eventType="touchDown" id="zRG-6g-Bm0"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NhS-Lc-8MR">
-                                        <rect key="frame" x="0.0" y="127" width="240" height="25"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="NhS-Lc-8MR">
+                                        <rect key="frame" x="0.0" y="129" width="240" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="13"/>
-                                        <state key="normal" title="SKIP" backgroundImage="buttonImage.png">
+                                        <state key="normal" title="SKIP" backgroundImage="button_blueline.png">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="skipButtonPressed:" destination="jI1-Tt-Fis" eventType="touchUpInside" id="qcr-Vj-zrM"/>
+                                            <action selector="skipButtonPressed:" destination="jI1-Tt-Fis" eventType="touchUpInside" id="FAw-vI-TCZ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -482,13 +482,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="buttonImage.png" width="240" height="25"/>
+        <image name="button_blueline.png" width="240" height="30"/>
         <image name="categoryImages_back.png" width="460" height="460"/>
     </resources>
     <classes>
         <class className="CategoryListViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CategoryListViewController.h"/>
             <relationships>
+                <relationship kind="action" name="backButtonPressed:"/>
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
             </relationships>
         </class>
@@ -504,6 +505,9 @@
         </class>
         <class className="SelectGameModeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SelectGameModeViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="gameModeButtonPressed:"/>
+            </relationships>
         </class>
         <class className="TopViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TopViewController.h"/>
@@ -511,7 +515,7 @@
         <class className="TriviaViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TriviaViewController.h"/>
             <relationships>
-                <relationship kind="action" name="answerButtonPressed:"/>
+                <relationship kind="action" name="answerPressed:"/>
                 <relationship kind="action" name="menuButtonPressed:"/>
                 <relationship kind="action" name="skipButtonPressed:"/>
                 <relationship kind="outlet" name="numberOfLife" candidateClass="UILabel"/>

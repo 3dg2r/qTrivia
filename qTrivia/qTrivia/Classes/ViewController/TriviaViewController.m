@@ -11,7 +11,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "ScoreListViewController.h"
 
-#define TIMER 60.0f
+#define TIMER 30.0f
 #define NUMOFLIFE 3
 
 
@@ -131,6 +131,10 @@
         [self performSegueWithIdentifier:@"goToScoreVC" sender:self];
     }
     else {
+        [self.triviaAnswer1 setBackgroundImage:[UIImage imageNamed:@"button_blueline.png"] forState:UIControlStateNormal];
+        [self.triviaAnswer2 setBackgroundImage:[UIImage imageNamed:@"button_blueline.png"] forState:UIControlStateNormal];
+        [self.triviaAnswer3 setBackgroundImage:[UIImage imageNamed:@"button_blueline.png"] forState:UIControlStateNormal];
+        [self.triviaAnswer4 setBackgroundImage:[UIImage imageNamed:@"button_blueline.png"] forState:UIControlStateNormal];
         NSMutableArray *arrayOfImage = [[[self.categoryArray objectAtIndex:counter] objectForKey:@"image_array"]mutableCopy];
         [arrayOfImage shuffle];
         
@@ -193,7 +197,7 @@
     }
 }
 
-- (IBAction)answerButtonPressed:(id)sender {
+- (IBAction)answerPressed:(id)sender {
     UIButton *button = (UIButton *)sender;
     NSInteger buttonTag = button.tag - 100;
     NSDictionary *dic = [self.answerList objectAtIndex:buttonTag];
@@ -207,14 +211,14 @@
             default:
                 break;
         }
-
+        [button setBackgroundImage:[UIImage imageNamed:@"button_blue.png"] forState:UIControlStateHighlighted];
         score += 10*streak;
         self.scoreLabel.text = [NSString stringWithFormat:@"%d",score];
         streak += 1;
-        [self setUpNewQuestion];
     }
     else {
         streak = 1;
+        [button setBackgroundImage:[UIImage imageNamed:@"button_red.png"] forState:UIControlStateHighlighted];
         switch (self.gameMode) {
             case GameModeTimeAttack:
                 timmerCounter -= 1.0f;
@@ -225,7 +229,7 @@
             case GameModeRelax:
                 numOfLife -= 1;
                 if (numOfLife == 0) {
-                     [self performSegueWithIdentifier:@"goToScoreVC" sender:self];
+                    [self performSegueWithIdentifier:@"goToScoreVC" sender:self];
                 }
                 else if (numOfLife == 1) {
                     self.skipButton.hidden = YES;
@@ -236,8 +240,8 @@
                 break;
         }
     }
+    [self setUpNewQuestion];
 }
-
 
 - (void)viewDidUnload {
     [self setTriviaImage1:nil];
