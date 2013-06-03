@@ -178,5 +178,49 @@
 		<key>key_answer</key>
 		<string>15</string>
 	</dict>
+	<dict>
+		<key>image_array</key>
+		<array>
+			<string>dubrovnik_1.png</string>
+			<string>dubrovnik_2.png</string>
+			<string>dubrovnik_3.png</string>
+			<string>dubrovnik_4.png</string>
+		</array>
+		<key>key_answer</key>
+		<string>16</string>
+	</dict>
+	<dict>
+		<key>image_array</key>
+		<array>
+			<string>marrakesh_1.png</string>
+			<string>marrakesh_2.png</string>
+			<string>marrakesh_3.png</string>
+			<string>marrakesh_4.png</string>
+		</array>
+		<key>key_answer</key>
+		<string>17</string>
+	</dict>
+	<dict>
+		<key>image_array</key>
+		<array>
+			<string>bangkok_1.png</string>
+			<string>bangkok_2.png</string>
+			<string>bangkok_3.png</string>
+			<string>bangkok_4.png</string>
+		</array>
+		<key>key_answer</key>
+		<string>18</string>
+	</dict>
+	<dict>
+		<key>image_array</key>
+		<array>
+			<string>stockholm_1.png</string>
+			<string>stockholm_2.png</string>
+			<string>stockholm_3.png</string>
+			<string>stockholm_4.png</string>
+		</array>
+		<key>key_answer</key>
+		<string>19</string>
+	</dict>
 </array>
 </plist>

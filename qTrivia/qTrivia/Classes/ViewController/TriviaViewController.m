@@ -11,7 +11,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "ScoreListViewController.h"
 
-#define TIMER 60.0f
+#define TIMER 45.0f
 #define NUMOFLIFE 3
 
 

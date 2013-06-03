@@ -101,6 +101,22 @@
 		C3545D25175C5A330081D0FD /* venice_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D21175C5A320081D0FD /* venice_2.png */; };
 		C3545D26175C5A330081D0FD /* venice_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D22175C5A330081D0FD /* venice_3.png */; };
 		C3545D27175C5A330081D0FD /* venice_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D23175C5A330081D0FD /* venice_4.png */; };
+		C3545D2C175C5CBE0081D0FD /* dubrovnik_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D28175C5CBC0081D0FD /* dubrovnik_1.png */; };
+		C3545D2D175C5CBE0081D0FD /* dubrovnik_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D29175C5CBC0081D0FD /* dubrovnik_2.png */; };
+		C3545D2E175C5CBE0081D0FD /* dubrovnik_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D2A175C5CBD0081D0FD /* dubrovnik_3.png */; };
+		C3545D2F175C5CBE0081D0FD /* dubrovnik_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D2B175C5CBD0081D0FD /* dubrovnik_4.png */; };
+		C3545D34175C60240081D0FD /* marrakesh_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D30175C60220081D0FD /* marrakesh_1.png */; };
+		C3545D35175C60240081D0FD /* marrakesh_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D31175C60230081D0FD /* marrakesh_2.png */; };
+		C3545D36175C60240081D0FD /* marrakesh_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D32175C60230081D0FD /* marrakesh_3.png */; };
+		C3545D37175C60240081D0FD /* marrakesh_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D33175C60240081D0FD /* marrakesh_4.png */; };
+		C3545D3C175C60AF0081D0FD /* bangkok_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D38175C60AD0081D0FD /* bangkok_1.png */; };
+		C3545D3D175C60AF0081D0FD /* bangkok_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D39175C60AD0081D0FD /* bangkok_2.png */; };
+		C3545D3E175C60AF0081D0FD /* bangkok_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D3A175C60AE0081D0FD /* bangkok_3.png */; };
+		C3545D3F175C60AF0081D0FD /* bangkok_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D3B175C60AE0081D0FD /* bangkok_4.png */; };
+		C3545D44175C61580081D0FD /* stockholm_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D40175C61560081D0FD /* stockholm_1.png */; };
+		C3545D45175C61580081D0FD /* stockholm_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D41175C61560081D0FD /* stockholm_2.png */; };
+		C3545D46175C61580081D0FD /* stockholm_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D42175C61570081D0FD /* stockholm_3.png */; };
+		C3545D47175C61580081D0FD /* stockholm_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D43175C61570081D0FD /* stockholm_4.png */; };
 		C35ECD7B17549C4700EE371B /* categoryImages_back.png in Resources */ = {isa = PBXBuildFile; fileRef = C35ECD7917549C4700EE371B /* categoryImages_back.png */; };
 		C35ECD9417549FDF00EE371B /* jamal_crawford.png in Resources */ = {isa = PBXBuildFile; fileRef = C35ECD7C17549FDF00EE371B /* jamal_crawford.png */; };
 		C35ECD9517549FDF00EE371B /* patrick_ewing.png in Resources */ = {isa = PBXBuildFile; fileRef = C35ECD7D17549FDF00EE371B /* patrick_ewing.png */; };
@@ -346,6 +362,22 @@
 		C3545D21175C5A320081D0FD /* venice_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = venice_2.png; sourceTree = "<group>"; };
 		C3545D22175C5A330081D0FD /* venice_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = venice_3.png; sourceTree = "<group>"; };
 		C3545D23175C5A330081D0FD /* venice_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = venice_4.png; sourceTree = "<group>"; };
+		C3545D28175C5CBC0081D0FD /* dubrovnik_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dubrovnik_1.png; sourceTree = "<group>"; };
+		C3545D29175C5CBC0081D0FD /* dubrovnik_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dubrovnik_2.png; sourceTree = "<group>"; };
+		C3545D2A175C5CBD0081D0FD /* dubrovnik_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dubrovnik_3.png; sourceTree = "<group>"; };
+		C3545D2B175C5CBD0081D0FD /* dubrovnik_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dubrovnik_4.png; sourceTree = "<group>"; };
+		C3545D30175C60220081D0FD /* marrakesh_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marrakesh_1.png; sourceTree = "<group>"; };
+		C3545D31175C60230081D0FD /* marrakesh_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marrakesh_2.png; sourceTree = "<group>"; };
+		C3545D32175C60230081D0FD /* marrakesh_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marrakesh_3.png; sourceTree = "<group>"; };
+		C3545D33175C60240081D0FD /* marrakesh_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marrakesh_4.png; sourceTree = "<group>"; };
+		C3545D38175C60AD0081D0FD /* bangkok_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bangkok_1.png; sourceTree = "<group>"; };
+		C3545D39175C60AD0081D0FD /* bangkok_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bangkok_2.png; sourceTree = "<group>"; };
+		C3545D3A175C60AE0081D0FD /* bangkok_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bangkok_3.png; sourceTree = "<group>"; };
+		C3545D3B175C60AE0081D0FD /* bangkok_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bangkok_4.png; sourceTree = "<group>"; };
+		C3545D40175C61560081D0FD /* stockholm_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stockholm_1.png; sourceTree = "<group>"; };
+		C3545D41175C61560081D0FD /* stockholm_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stockholm_2.png; sourceTree = "<group>"; };
+		C3545D42175C61570081D0FD /* stockholm_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stockholm_3.png; sourceTree = "<group>"; };
+		C3545D43175C61570081D0FD /* stockholm_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stockholm_4.png; sourceTree = "<group>"; };
 		C35ECD7917549C4700EE371B /* categoryImages_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = categoryImages_back.png; sourceTree = "<group>"; };
 		C35ECD7C17549FDF00EE371B /* jamal_crawford.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jamal_crawford.png; sourceTree = "<group>"; };
 		C35ECD7D17549FDF00EE371B /* patrick_ewing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = patrick_ewing.png; sourceTree = "<group>"; };
@@ -501,6 +533,22 @@
 		7A72B3A8175B619300D21A4A /* Places */ = {
 			isa = PBXGroup;
 			children = (
+				C3545D40175C61560081D0FD /* stockholm_1.png */,
+				C3545D41175C61560081D0FD /* stockholm_2.png */,
+				C3545D42175C61570081D0FD /* stockholm_3.png */,
+				C3545D43175C61570081D0FD /* stockholm_4.png */,
+				C3545D38175C60AD0081D0FD /* bangkok_1.png */,
+				C3545D39175C60AD0081D0FD /* bangkok_2.png */,
+				C3545D3A175C60AE0081D0FD /* bangkok_3.png */,
+				C3545D3B175C60AE0081D0FD /* bangkok_4.png */,
+				C3545D30175C60220081D0FD /* marrakesh_1.png */,
+				C3545D31175C60230081D0FD /* marrakesh_2.png */,
+				C3545D32175C60230081D0FD /* marrakesh_3.png */,
+				C3545D33175C60240081D0FD /* marrakesh_4.png */,
+				C3545D28175C5CBC0081D0FD /* dubrovnik_1.png */,
+				C3545D29175C5CBC0081D0FD /* dubrovnik_2.png */,
+				C3545D2A175C5CBD0081D0FD /* dubrovnik_3.png */,
+				C3545D2B175C5CBD0081D0FD /* dubrovnik_4.png */,
 				C3545D20175C5A320081D0FD /* venice_1.png */,
 				C3545D21175C5A320081D0FD /* venice_2.png */,
 				C3545D22175C5A330081D0FD /* venice_3.png */,
@@ -1158,6 +1206,22 @@
 				C3545D25175C5A330081D0FD /* venice_2.png in Resources */,
 				C3545D26175C5A330081D0FD /* venice_3.png in Resources */,
 				C3545D27175C5A330081D0FD /* venice_4.png in Resources */,
+				C3545D2C175C5CBE0081D0FD /* dubrovnik_1.png in Resources */,
+				C3545D2D175C5CBE0081D0FD /* dubrovnik_2.png in Resources */,
+				C3545D2E175C5CBE0081D0FD /* dubrovnik_3.png in Resources */,
+				C3545D2F175C5CBE0081D0FD /* dubrovnik_4.png in Resources */,
+				C3545D34175C60240081D0FD /* marrakesh_1.png in Resources */,
+				C3545D35175C60240081D0FD /* marrakesh_2.png in Resources */,
+				C3545D36175C60240081D0FD /* marrakesh_3.png in Resources */,
+				C3545D37175C60240081D0FD /* marrakesh_4.png in Resources */,
+				C3545D3C175C60AF0081D0FD /* bangkok_1.png in Resources */,
+				C3545D3D175C60AF0081D0FD /* bangkok_2.png in Resources */,
+				C3545D3E175C60AF0081D0FD /* bangkok_3.png in Resources */,
+				C3545D3F175C60AF0081D0FD /* bangkok_4.png in Resources */,
+				C3545D44175C61580081D0FD /* stockholm_1.png in Resources */,
+				C3545D45175C61580081D0FD /* stockholm_2.png in Resources */,
+				C3545D46175C61580081D0FD /* stockholm_3.png in Resources */,
+				C3545D47175C61580081D0FD /* stockholm_4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
