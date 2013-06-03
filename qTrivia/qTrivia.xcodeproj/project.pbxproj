@@ -197,6 +197,9 @@
 		C3545DE5175C9D600081D0FD /* tokyo_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DD9175C9D580081D0FD /* tokyo_2.png */; };
 		C3545DE6175C9D600081D0FD /* tokyo_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DDA175C9D5D0081D0FD /* tokyo_3.png */; };
 		C3545DE7175C9D600081D0FD /* tokyo_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DDB175C9D5E0081D0FD /* tokyo_4.png */; };
+		C3545DED175CA6810081D0FD /* AdBannerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C3545DEA175CA6810081D0FD /* AdBannerManager.m */; };
+		C3545DF0175CA69A0081D0FD /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3545DEF175CA69A0081D0FD /* iAd.framework */; };
+		C3545DF3175CAECB0081D0FD /* iAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3545DF1175CAECB0081D0FD /* iAdView.m */; };
 		C35ECD7B17549C4700EE371B /* categoryImages_back.png in Resources */ = {isa = PBXBuildFile; fileRef = C35ECD7917549C4700EE371B /* categoryImages_back.png */; };
 		C35ECD9417549FDF00EE371B /* jamal_crawford.png in Resources */ = {isa = PBXBuildFile; fileRef = C35ECD7C17549FDF00EE371B /* jamal_crawford.png */; };
 		C35ECD9517549FDF00EE371B /* patrick_ewing.png in Resources */ = {isa = PBXBuildFile; fileRef = C35ECD7D17549FDF00EE371B /* patrick_ewing.png */; };
@@ -538,6 +541,11 @@
 		C3545DD9175C9D580081D0FD /* tokyo_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tokyo_2.png; sourceTree = "<group>"; };
 		C3545DDA175C9D5D0081D0FD /* tokyo_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tokyo_3.png; sourceTree = "<group>"; };
 		C3545DDB175C9D5E0081D0FD /* tokyo_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tokyo_4.png; sourceTree = "<group>"; };
+		C3545DE9175CA6810081D0FD /* AdBannerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdBannerManager.h; sourceTree = "<group>"; };
+		C3545DEA175CA6810081D0FD /* AdBannerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdBannerManager.m; sourceTree = "<group>"; };
+		C3545DEF175CA69A0081D0FD /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		C3545DF1175CAECB0081D0FD /* iAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iAdView.m; sourceTree = "<group>"; };
+		C3545DF2175CAECB0081D0FD /* iAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAdView.h; sourceTree = "<group>"; };
 		C35ECD7917549C4700EE371B /* categoryImages_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = categoryImages_back.png; sourceTree = "<group>"; };
 		C35ECD7C17549FDF00EE371B /* jamal_crawford.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jamal_crawford.png; sourceTree = "<group>"; };
 		C35ECD7D17549FDF00EE371B /* patrick_ewing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = patrick_ewing.png; sourceTree = "<group>"; };
@@ -681,6 +689,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3545DF0175CA69A0081D0FD /* iAd.framework in Frameworks */,
 				7AFFF84B174FCC7000C1D4D8 /* UIKit.framework in Frameworks */,
 				7AFFF84D174FCC7000C1D4D8 /* Foundation.framework in Frameworks */,
 				7AFFF84F174FCC7000C1D4D8 /* CoreGraphics.framework in Frameworks */,
@@ -895,6 +904,7 @@
 		7AFFF849174FCC7000C1D4D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C3545DEF175CA69A0081D0FD /* iAd.framework */,
 				7AFFF84A174FCC7000C1D4D8 /* UIKit.framework */,
 				7AFFF84C174FCC7000C1D4D8 /* Foundation.framework */,
 				7AFFF84E174FCC7000C1D4D8 /* CoreGraphics.framework */,
@@ -967,6 +977,7 @@
 		7AFFF87C174FCF6500C1D4D8 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C3545DE8175CA6810081D0FD /* iAd */,
 				7AF0A19D175747C7007F3E71 /* Category */,
 				7AFFF884174FD0B400C1D4D8 /* Cell */,
 				7AFFF880174FD01900C1D4D8 /* Helper */,
@@ -1010,6 +1021,17 @@
 				7AFFF891174FDE3500C1D4D8 /* SportCategoryAnswer_1.plist */,
 			);
 			path = SportCategory;
+			sourceTree = "<group>";
+		};
+		C3545DE8175CA6810081D0FD /* iAd */ = {
+			isa = PBXGroup;
+			children = (
+				C3545DF1175CAECB0081D0FD /* iAdView.m */,
+				C3545DF2175CAECB0081D0FD /* iAdView.h */,
+				C3545DE9175CA6810081D0FD /* AdBannerManager.h */,
+				C3545DEA175CA6810081D0FD /* AdBannerManager.m */,
+			);
+			path = iAd;
 			sourceTree = "<group>";
 		};
 		C35ECD46175481E700EE371B /* Resources */ = {
@@ -1562,6 +1584,8 @@
 				7AF0A1A0175747C7007F3E71 /* NSMutableArray+Shuffling.m in Sources */,
 				7AF0A1A317574E05007F3E71 /* ScoreListViewController.m in Sources */,
 				7AF0A1A6175751FB007F3E71 /* SelectGameModeViewController.m in Sources */,
+				C3545DED175CA6810081D0FD /* AdBannerManager.m in Sources */,
+				C3545DF3175CAECB0081D0FD /* iAdView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

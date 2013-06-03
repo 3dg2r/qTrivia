@@ -7,6 +7,7 @@
 //
 
 #import "TopViewController.h"
+#import "AdBannerManager.h"
 
 @interface TopViewController ()
 
@@ -17,15 +18,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib
-    
-//    NSUInteger n = [randomNumberArray count];
-//    while (n > 1) {
-//        NSUInteger j = arc4random() % n;
-//        n--;
-//        [randomNumberArray exchangeObjectAtIndex:j withObjectAtIndex:n];
-//    }
-    
+    AdBannerManager *adBanner = [[AdBannerManager sharedManager] init];
+    [adBanner addiAdInView:nil];
     
 }
 

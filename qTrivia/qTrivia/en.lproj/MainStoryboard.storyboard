@@ -75,7 +75,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="rFq-nB-ta2">
-                                <rect key="frame" x="0.0" y="47" width="320" height="413"/>
+                                <rect key="frame" x="0.0" y="47" width="320" height="363"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -187,16 +187,16 @@
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="13r-0N-edx">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="39Y-vn-Yyr">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MzQ-4q-2S5">
-                                        <rect key="frame" x="232" y="6" width="73" height="38"/>
+                                        <rect key="frame" x="245" y="1" width="73" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="Menu">
@@ -211,28 +211,28 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Score:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="J01-se-qA6">
-                                        <rect key="frame" x="10" y="17" width="42" height="21"/>
+                                        <rect key="frame" x="10" y="5" width="42" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jmy-08-Msm">
-                                        <rect key="frame" x="54" y="17" width="42" height="21"/>
+                                        <rect key="frame" x="54" y="5" width="42" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="67e-xG-9wK">
-                                        <rect key="frame" x="105" y="10" width="110" height="29"/>
+                                        <rect key="frame" x="105" y="0.0" width="110" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="No. of lifes: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QEa-PD-jc6">
-                                        <rect key="frame" x="96" y="17" width="90" height="21"/>
+                                        <rect key="frame" x="96" y="7" width="90" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -249,7 +249,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" id="Mzr-8f-LZK">
-                                <rect key="frame" x="45" y="53" width="230" height="230"/>
+                                <rect key="frame" x="45" y="33" width="230" height="230"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="categoryImages_back.png" id="OqQ-fV-Vln">
@@ -276,11 +276,11 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" id="bne-zr-2yV">
-                                <rect key="frame" x="40" y="288" width="240" height="164"/>
+                                <rect key="frame" x="40" y="264" width="240" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="b2y-VU-gAK">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="30"/>
+                                        <rect key="frame" x="0.0" y="4" width="240" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                         <state key="normal" backgroundImage="button_blueline.png">
@@ -295,7 +295,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="NdC-hn-g4h">
-                                        <rect key="frame" x="0.0" y="32" width="240" height="30"/>
+                                        <rect key="frame" x="0.0" y="39" width="240" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                         <state key="normal" backgroundImage="button_blueline.png">
@@ -310,7 +310,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="auh-ss-T91">
-                                        <rect key="frame" x="0.0" y="65" width="240" height="30"/>
+                                        <rect key="frame" x="0.0" y="74" width="240" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                         <state key="normal" backgroundImage="button_blueline.png">
@@ -325,7 +325,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="cBc-64-gki">
-                                        <rect key="frame" x="0.0" y="97" width="240" height="30"/>
+                                        <rect key="frame" x="0.0" y="109" width="240" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                         <state key="normal" backgroundImage="button_blueline.png">
@@ -337,18 +337,6 @@
                                         </state>
                                         <connections>
                                             <action selector="answerPressed:" destination="jI1-Tt-Fis" eventType="touchDown" id="zRG-6g-Bm0"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="NhS-Lc-8MR">
-                                        <rect key="frame" x="0.0" y="129" width="240" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="13"/>
-                                        <state key="normal" title="SKIP" backgroundImage="button_blueline.png">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="skipButtonPressed:" destination="jI1-Tt-Fis" eventType="touchUpInside" id="FAw-vI-TCZ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -363,7 +351,6 @@
                         <outlet property="numberOfLife" destination="VOS-2c-Yco" id="Ne9-F9-Obz"/>
                         <outlet property="numberOfLifesTextLabel" destination="QEa-PD-jc6" id="uKk-bp-aRa"/>
                         <outlet property="scoreLabel" destination="Jmy-08-Msm" id="VkY-YF-Ioo"/>
-                        <outlet property="skipButton" destination="NhS-Lc-8MR" id="Hfa-FN-La4"/>
                         <outlet property="timerLabel" destination="67e-xG-9wK" id="dS6-Jx-ahF"/>
                         <outlet property="triviaAnswer1" destination="b2y-VU-gAK" id="n61-1c-Ljw"/>
                         <outlet property="triviaAnswer2" destination="NdC-hn-g4h" id="XaZ-Bz-6MM"/>
@@ -517,7 +504,6 @@
             <relationships>
                 <relationship kind="action" name="answerPressed:"/>
                 <relationship kind="action" name="menuButtonPressed:"/>
-                <relationship kind="action" name="skipButtonPressed:"/>
                 <relationship kind="outlet" name="numberOfLife" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="numberOfLifesTextLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>

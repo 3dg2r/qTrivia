@@ -26,6 +26,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(addWillStart:)
+     name:@"willStartAction"
+     object:nil];
+    
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(addDidFinish:)
+     name:@"didFinishAdsAction"
+     object:nil];
+    
+    
     self.answerList = [[NSMutableArray alloc]init];
     NSString *categoryPlistName = [NSString stringWithFormat:@"%@_1",[self.categoryDictionary objectForKey:@"unique_id"]];
     self.categoryArray = [[PlistHelper getArray:categoryPlistName]mutableCopy];
@@ -69,6 +83,18 @@
 
     [self setUpNewQuestion];
 }
+
+#pragma mark - ad
+-(void)addWillStart:(NSNotification *)notification {
+    NSLog(@"ADDDD");
+    puase = YES;
+}
+
+-(void)addDidFinish:(NSNotification *)notification {
+    NSLog(@"ADDDD DONE!");
+    puase = NO;
+}
+
 
 #pragma mark - set up timer
 
@@ -174,28 +200,28 @@
 - (IBAction)menuButtonPressed:(id)sender {
 }
 
-- (IBAction)skipButtonPressed:(id)sender {
-    [self setUpNewQuestion];
-    
-    switch (self.gameMode) {
-        case GameModeTimeAttack:
-            timmerCounter -= 0.5f;
-            break;
-        case GameModeSurvival:
-            timmerCounter -= 0.5f;
-            break;
-        case GameModeRelax:
-            numOfLife -= 1;
-            if (numOfLife == 1) {
-                self.skipButton.hidden = YES;
-            }
-            self.numberOfLife.text = [NSString stringWithFormat:@"%d",numOfLife];
-        
-            break;
-        default:
-            break;
-    }
-}
+//- (IBAction)skipButtonPressed:(id)sender {
+//    [self setUpNewQuestion];
+//    
+//    switch (self.gameMode) {
+//        case GameModeTimeAttack:
+//            timmerCounter -= 0.5f;
+//            break;
+//        case GameModeSurvival:
+//            timmerCounter -= 0.5f;
+//            break;
+//        case GameModeRelax:
+//            numOfLife -= 1;
+//            if (numOfLife == 1) {
+//                self.skipButton.hidden = YES;
+//            }
+//            self.numberOfLife.text = [NSString stringWithFormat:@"%d",numOfLife];
+//        
+//            break;
+//        default:
+//            break;
+//    }
+//}
 
 - (IBAction)answerPressed:(id)sender {
     UIButton *button = (UIButton *)sender;
