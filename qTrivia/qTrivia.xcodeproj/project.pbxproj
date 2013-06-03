@@ -173,6 +173,30 @@
 		C3545DB5175C90E00081D0FD /* san_francisco_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DA5175C90DB0081D0FD /* san_francisco_2.png */; };
 		C3545DB6175C90E00081D0FD /* san_francisco_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DA6175C90DD0081D0FD /* san_francisco_3.png */; };
 		C3545DB7175C90E00081D0FD /* san_francisco_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DA7175C90DE0081D0FD /* san_francisco_4.png */; };
+		C3545DC4175C9B330081D0FD /* beijing_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DB8175C9B1E0081D0FD /* beijing_1.png */; };
+		C3545DC5175C9B330081D0FD /* beijing_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DB9175C9B1F0081D0FD /* beijing_2.png */; };
+		C3545DC6175C9B330081D0FD /* beijing_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DBA175C9B210081D0FD /* beijing_3.png */; };
+		C3545DC7175C9B330081D0FD /* beijing_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DBB175C9B220081D0FD /* beijing_4.png */; };
+		C3545DC8175C9B330081D0FD /* los_angeles_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DBC175C9B240081D0FD /* los_angeles_1.png */; };
+		C3545DC9175C9B330081D0FD /* los_angeles_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DBD175C9B260081D0FD /* los_angeles_2.png */; };
+		C3545DCA175C9B330081D0FD /* los_angeles_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DBE175C9B280081D0FD /* los_angeles_3.png */; };
+		C3545DCB175C9B330081D0FD /* los_angeles_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DBF175C9B2A0081D0FD /* los_angeles_4.png */; };
+		C3545DCC175C9B330081D0FD /* whistler_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DC0175C9B2C0081D0FD /* whistler_1.png */; };
+		C3545DCD175C9B330081D0FD /* whistler_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DC1175C9B2E0081D0FD /* whistler_2.png */; };
+		C3545DCE175C9B330081D0FD /* whistler_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DC2175C9B300081D0FD /* whistler_3.png */; };
+		C3545DCF175C9B330081D0FD /* whistler_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DC3175C9B320081D0FD /* whistler_4.png */; };
+		C3545DDC175C9D600081D0FD /* singapore_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DD0175C9D470081D0FD /* singapore_1.png */; };
+		C3545DDD175C9D600081D0FD /* singapore_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DD1175C9D480081D0FD /* singapore_2.png */; };
+		C3545DDE175C9D600081D0FD /* singapore_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DD2175C9D4B0081D0FD /* singapore_3.png */; };
+		C3545DDF175C9D600081D0FD /* singapore_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DD3175C9D4D0081D0FD /* singapore_4.png */; };
+		C3545DE0175C9D600081D0FD /* split_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DD4175C9D4F0081D0FD /* split_1.png */; };
+		C3545DE1175C9D600081D0FD /* split_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DD5175C9D510081D0FD /* split_2.png */; };
+		C3545DE2175C9D600081D0FD /* split_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DD6175C9D530081D0FD /* split_3.png */; };
+		C3545DE3175C9D600081D0FD /* split_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DD7175C9D550081D0FD /* split_4.png */; };
+		C3545DE4175C9D600081D0FD /* tokyo_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DD8175C9D570081D0FD /* tokyo_1.png */; };
+		C3545DE5175C9D600081D0FD /* tokyo_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DD9175C9D580081D0FD /* tokyo_2.png */; };
+		C3545DE6175C9D600081D0FD /* tokyo_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DDA175C9D5D0081D0FD /* tokyo_3.png */; };
+		C3545DE7175C9D600081D0FD /* tokyo_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DDB175C9D5E0081D0FD /* tokyo_4.png */; };
 		C35ECD7B17549C4700EE371B /* categoryImages_back.png in Resources */ = {isa = PBXBuildFile; fileRef = C35ECD7917549C4700EE371B /* categoryImages_back.png */; };
 		C35ECD9417549FDF00EE371B /* jamal_crawford.png in Resources */ = {isa = PBXBuildFile; fileRef = C35ECD7C17549FDF00EE371B /* jamal_crawford.png */; };
 		C35ECD9517549FDF00EE371B /* patrick_ewing.png in Resources */ = {isa = PBXBuildFile; fileRef = C35ECD7D17549FDF00EE371B /* patrick_ewing.png */; };
@@ -490,6 +514,30 @@
 		C3545DA5175C90DB0081D0FD /* san_francisco_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = san_francisco_2.png; sourceTree = "<group>"; };
 		C3545DA6175C90DD0081D0FD /* san_francisco_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = san_francisco_3.png; sourceTree = "<group>"; };
 		C3545DA7175C90DE0081D0FD /* san_francisco_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = san_francisco_4.png; sourceTree = "<group>"; };
+		C3545DB8175C9B1E0081D0FD /* beijing_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beijing_1.png; sourceTree = "<group>"; };
+		C3545DB9175C9B1F0081D0FD /* beijing_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beijing_2.png; sourceTree = "<group>"; };
+		C3545DBA175C9B210081D0FD /* beijing_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beijing_3.png; sourceTree = "<group>"; };
+		C3545DBB175C9B220081D0FD /* beijing_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beijing_4.png; sourceTree = "<group>"; };
+		C3545DBC175C9B240081D0FD /* los_angeles_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = los_angeles_1.png; sourceTree = "<group>"; };
+		C3545DBD175C9B260081D0FD /* los_angeles_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = los_angeles_2.png; sourceTree = "<group>"; };
+		C3545DBE175C9B280081D0FD /* los_angeles_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = los_angeles_3.png; sourceTree = "<group>"; };
+		C3545DBF175C9B2A0081D0FD /* los_angeles_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = los_angeles_4.png; sourceTree = "<group>"; };
+		C3545DC0175C9B2C0081D0FD /* whistler_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whistler_1.png; sourceTree = "<group>"; };
+		C3545DC1175C9B2E0081D0FD /* whistler_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whistler_2.png; sourceTree = "<group>"; };
+		C3545DC2175C9B300081D0FD /* whistler_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whistler_3.png; sourceTree = "<group>"; };
+		C3545DC3175C9B320081D0FD /* whistler_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whistler_4.png; sourceTree = "<group>"; };
+		C3545DD0175C9D470081D0FD /* singapore_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = singapore_1.png; sourceTree = "<group>"; };
+		C3545DD1175C9D480081D0FD /* singapore_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = singapore_2.png; sourceTree = "<group>"; };
+		C3545DD2175C9D4B0081D0FD /* singapore_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = singapore_3.png; sourceTree = "<group>"; };
+		C3545DD3175C9D4D0081D0FD /* singapore_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = singapore_4.png; sourceTree = "<group>"; };
+		C3545DD4175C9D4F0081D0FD /* split_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = split_1.png; sourceTree = "<group>"; };
+		C3545DD5175C9D510081D0FD /* split_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = split_2.png; sourceTree = "<group>"; };
+		C3545DD6175C9D530081D0FD /* split_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = split_3.png; sourceTree = "<group>"; };
+		C3545DD7175C9D550081D0FD /* split_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = split_4.png; sourceTree = "<group>"; };
+		C3545DD8175C9D570081D0FD /* tokyo_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tokyo_1.png; sourceTree = "<group>"; };
+		C3545DD9175C9D580081D0FD /* tokyo_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tokyo_2.png; sourceTree = "<group>"; };
+		C3545DDA175C9D5D0081D0FD /* tokyo_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tokyo_3.png; sourceTree = "<group>"; };
+		C3545DDB175C9D5E0081D0FD /* tokyo_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tokyo_4.png; sourceTree = "<group>"; };
 		C35ECD7917549C4700EE371B /* categoryImages_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = categoryImages_back.png; sourceTree = "<group>"; };
 		C35ECD7C17549FDF00EE371B /* jamal_crawford.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jamal_crawford.png; sourceTree = "<group>"; };
 		C35ECD7D17549FDF00EE371B /* patrick_ewing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = patrick_ewing.png; sourceTree = "<group>"; };
@@ -645,6 +693,30 @@
 		7A72B3A8175B619300D21A4A /* Places */ = {
 			isa = PBXGroup;
 			children = (
+				C3545DD0175C9D470081D0FD /* singapore_1.png */,
+				C3545DD1175C9D480081D0FD /* singapore_2.png */,
+				C3545DD2175C9D4B0081D0FD /* singapore_3.png */,
+				C3545DD3175C9D4D0081D0FD /* singapore_4.png */,
+				C3545DD4175C9D4F0081D0FD /* split_1.png */,
+				C3545DD5175C9D510081D0FD /* split_2.png */,
+				C3545DD6175C9D530081D0FD /* split_3.png */,
+				C3545DD7175C9D550081D0FD /* split_4.png */,
+				C3545DD8175C9D570081D0FD /* tokyo_1.png */,
+				C3545DD9175C9D580081D0FD /* tokyo_2.png */,
+				C3545DDA175C9D5D0081D0FD /* tokyo_3.png */,
+				C3545DDB175C9D5E0081D0FD /* tokyo_4.png */,
+				C3545DB8175C9B1E0081D0FD /* beijing_1.png */,
+				C3545DB9175C9B1F0081D0FD /* beijing_2.png */,
+				C3545DBA175C9B210081D0FD /* beijing_3.png */,
+				C3545DBB175C9B220081D0FD /* beijing_4.png */,
+				C3545DBC175C9B240081D0FD /* los_angeles_1.png */,
+				C3545DBD175C9B260081D0FD /* los_angeles_2.png */,
+				C3545DBE175C9B280081D0FD /* los_angeles_3.png */,
+				C3545DBF175C9B2A0081D0FD /* los_angeles_4.png */,
+				C3545DC0175C9B2C0081D0FD /* whistler_1.png */,
+				C3545DC1175C9B2E0081D0FD /* whistler_2.png */,
+				C3545DC2175C9B300081D0FD /* whistler_3.png */,
+				C3545DC3175C9B320081D0FD /* whistler_4.png */,
 				C3545D98175C90C90081D0FD /* brugge_1.png */,
 				C3545D99175C90CA0081D0FD /* brugge_2.png */,
 				C3545D9A175C90CB0081D0FD /* brugge_3.png */,
@@ -1446,6 +1518,30 @@
 				C3545DB5175C90E00081D0FD /* san_francisco_2.png in Resources */,
 				C3545DB6175C90E00081D0FD /* san_francisco_3.png in Resources */,
 				C3545DB7175C90E00081D0FD /* san_francisco_4.png in Resources */,
+				C3545DC4175C9B330081D0FD /* beijing_1.png in Resources */,
+				C3545DC5175C9B330081D0FD /* beijing_2.png in Resources */,
+				C3545DC6175C9B330081D0FD /* beijing_3.png in Resources */,
+				C3545DC7175C9B330081D0FD /* beijing_4.png in Resources */,
+				C3545DC8175C9B330081D0FD /* los_angeles_1.png in Resources */,
+				C3545DC9175C9B330081D0FD /* los_angeles_2.png in Resources */,
+				C3545DCA175C9B330081D0FD /* los_angeles_3.png in Resources */,
+				C3545DCB175C9B330081D0FD /* los_angeles_4.png in Resources */,
+				C3545DCC175C9B330081D0FD /* whistler_1.png in Resources */,
+				C3545DCD175C9B330081D0FD /* whistler_2.png in Resources */,
+				C3545DCE175C9B330081D0FD /* whistler_3.png in Resources */,
+				C3545DCF175C9B330081D0FD /* whistler_4.png in Resources */,
+				C3545DDC175C9D600081D0FD /* singapore_1.png in Resources */,
+				C3545DDD175C9D600081D0FD /* singapore_2.png in Resources */,
+				C3545DDE175C9D600081D0FD /* singapore_3.png in Resources */,
+				C3545DDF175C9D600081D0FD /* singapore_4.png in Resources */,
+				C3545DE0175C9D600081D0FD /* split_1.png in Resources */,
+				C3545DE1175C9D600081D0FD /* split_2.png in Resources */,
+				C3545DE2175C9D600081D0FD /* split_3.png in Resources */,
+				C3545DE3175C9D600081D0FD /* split_4.png in Resources */,
+				C3545DE4175C9D600081D0FD /* tokyo_1.png in Resources */,
+				C3545DE5175C9D600081D0FD /* tokyo_2.png in Resources */,
+				C3545DE6175C9D600081D0FD /* tokyo_3.png in Resources */,
+				C3545DE7175C9D600081D0FD /* tokyo_4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
