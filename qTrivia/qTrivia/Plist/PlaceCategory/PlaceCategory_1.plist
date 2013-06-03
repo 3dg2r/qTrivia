@@ -332,5 +332,49 @@
 		<key>key_answer</key>
 		<string>29</string>
 	</dict>
+	<dict>
+		<key>image_array</key>
+		<array>
+			<string>cinque_1.png</string>
+			<string>cinque_2.png</string>
+			<string>cinque_3.png</string>
+			<string>cinque_4.png</string>
+		</array>
+		<key>key_answer</key>
+		<string>30</string>
+	</dict>
+	<dict>
+		<key>image_array</key>
+		<array>
+			<string>san_francisco_1.png</string>
+			<string>san_francisco_2.png</string>
+			<string>san_francisco_3.png</string>
+			<string>san_francisco_4.png</string>
+		</array>
+		<key>key_answer</key>
+		<string>31</string>
+	</dict>
+	<dict>
+		<key>image_array</key>
+		<array>
+			<string>florence_1.png</string>
+			<string>florence_2.png</string>
+			<string>florence_3.png</string>
+			<string>florence_4.png</string>
+		</array>
+		<key>key_answer</key>
+		<string>32</string>
+	</dict>
+	<dict>
+		<key>image_array</key>
+		<array>
+			<string>brugge_1.png</string>
+			<string>brugge_2.png</string>
+			<string>brugge_3.png</string>
+			<string>brugge_4.png</string>
+		</array>
+		<key>key_answer</key>
+		<string>33</string>
+	</dict>
 </array>
 </plist>

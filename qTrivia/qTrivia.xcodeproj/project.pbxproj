@@ -157,6 +157,22 @@
 		C3545D95175C79EB0081D0FD /* istanbul_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D89175C79E80081D0FD /* istanbul_2.png */; };
 		C3545D96175C79EB0081D0FD /* istanbul_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D8A175C79E90081D0FD /* istanbul_3.png */; };
 		C3545D97175C79EB0081D0FD /* istanbul_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D8B175C79EA0081D0FD /* istanbul_4.png */; };
+		C3545DA8175C90E00081D0FD /* brugge_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D98175C90C90081D0FD /* brugge_1.png */; };
+		C3545DA9175C90E00081D0FD /* brugge_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D99175C90CA0081D0FD /* brugge_2.png */; };
+		C3545DAA175C90E00081D0FD /* brugge_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D9A175C90CB0081D0FD /* brugge_3.png */; };
+		C3545DAB175C90E00081D0FD /* brugge_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D9B175C90CC0081D0FD /* brugge_4.png */; };
+		C3545DAC175C90E00081D0FD /* cinque_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D9C175C90CE0081D0FD /* cinque_1.png */; };
+		C3545DAD175C90E00081D0FD /* cinque_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D9D175C90D00081D0FD /* cinque_2.png */; };
+		C3545DAE175C90E00081D0FD /* cinque_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D9E175C90D10081D0FD /* cinque_3.png */; };
+		C3545DAF175C90E00081D0FD /* cinque_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545D9F175C90D20081D0FD /* cinque_4.png */; };
+		C3545DB0175C90E00081D0FD /* florence_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DA0175C90D40081D0FD /* florence_1.png */; };
+		C3545DB1175C90E00081D0FD /* florence_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DA1175C90D50081D0FD /* florence_2.png */; };
+		C3545DB2175C90E00081D0FD /* florence_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DA2175C90D70081D0FD /* florence_3.png */; };
+		C3545DB3175C90E00081D0FD /* florence_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DA3175C90D80081D0FD /* florence_4.png */; };
+		C3545DB4175C90E00081D0FD /* san_francisco_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DA4175C90DA0081D0FD /* san_francisco_1.png */; };
+		C3545DB5175C90E00081D0FD /* san_francisco_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DA5175C90DB0081D0FD /* san_francisco_2.png */; };
+		C3545DB6175C90E00081D0FD /* san_francisco_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DA6175C90DD0081D0FD /* san_francisco_3.png */; };
+		C3545DB7175C90E00081D0FD /* san_francisco_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545DA7175C90DE0081D0FD /* san_francisco_4.png */; };
 		C35ECD7B17549C4700EE371B /* categoryImages_back.png in Resources */ = {isa = PBXBuildFile; fileRef = C35ECD7917549C4700EE371B /* categoryImages_back.png */; };
 		C35ECD9417549FDF00EE371B /* jamal_crawford.png in Resources */ = {isa = PBXBuildFile; fileRef = C35ECD7C17549FDF00EE371B /* jamal_crawford.png */; };
 		C35ECD9517549FDF00EE371B /* patrick_ewing.png in Resources */ = {isa = PBXBuildFile; fileRef = C35ECD7D17549FDF00EE371B /* patrick_ewing.png */; };
@@ -458,6 +474,22 @@
 		C3545D89175C79E80081D0FD /* istanbul_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = istanbul_2.png; sourceTree = "<group>"; };
 		C3545D8A175C79E90081D0FD /* istanbul_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = istanbul_3.png; sourceTree = "<group>"; };
 		C3545D8B175C79EA0081D0FD /* istanbul_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = istanbul_4.png; sourceTree = "<group>"; };
+		C3545D98175C90C90081D0FD /* brugge_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brugge_1.png; sourceTree = "<group>"; };
+		C3545D99175C90CA0081D0FD /* brugge_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brugge_2.png; sourceTree = "<group>"; };
+		C3545D9A175C90CB0081D0FD /* brugge_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brugge_3.png; sourceTree = "<group>"; };
+		C3545D9B175C90CC0081D0FD /* brugge_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brugge_4.png; sourceTree = "<group>"; };
+		C3545D9C175C90CE0081D0FD /* cinque_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cinque_1.png; sourceTree = "<group>"; };
+		C3545D9D175C90D00081D0FD /* cinque_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cinque_2.png; sourceTree = "<group>"; };
+		C3545D9E175C90D10081D0FD /* cinque_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cinque_3.png; sourceTree = "<group>"; };
+		C3545D9F175C90D20081D0FD /* cinque_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cinque_4.png; sourceTree = "<group>"; };
+		C3545DA0175C90D40081D0FD /* florence_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = florence_1.png; sourceTree = "<group>"; };
+		C3545DA1175C90D50081D0FD /* florence_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = florence_2.png; sourceTree = "<group>"; };
+		C3545DA2175C90D70081D0FD /* florence_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = florence_3.png; sourceTree = "<group>"; };
+		C3545DA3175C90D80081D0FD /* florence_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = florence_4.png; sourceTree = "<group>"; };
+		C3545DA4175C90DA0081D0FD /* san_francisco_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = san_francisco_1.png; sourceTree = "<group>"; };
+		C3545DA5175C90DB0081D0FD /* san_francisco_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = san_francisco_2.png; sourceTree = "<group>"; };
+		C3545DA6175C90DD0081D0FD /* san_francisco_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = san_francisco_3.png; sourceTree = "<group>"; };
+		C3545DA7175C90DE0081D0FD /* san_francisco_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = san_francisco_4.png; sourceTree = "<group>"; };
 		C35ECD7917549C4700EE371B /* categoryImages_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = categoryImages_back.png; sourceTree = "<group>"; };
 		C35ECD7C17549FDF00EE371B /* jamal_crawford.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jamal_crawford.png; sourceTree = "<group>"; };
 		C35ECD7D17549FDF00EE371B /* patrick_ewing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = patrick_ewing.png; sourceTree = "<group>"; };
@@ -613,6 +645,22 @@
 		7A72B3A8175B619300D21A4A /* Places */ = {
 			isa = PBXGroup;
 			children = (
+				C3545D98175C90C90081D0FD /* brugge_1.png */,
+				C3545D99175C90CA0081D0FD /* brugge_2.png */,
+				C3545D9A175C90CB0081D0FD /* brugge_3.png */,
+				C3545D9B175C90CC0081D0FD /* brugge_4.png */,
+				C3545D9C175C90CE0081D0FD /* cinque_1.png */,
+				C3545D9D175C90D00081D0FD /* cinque_2.png */,
+				C3545D9E175C90D10081D0FD /* cinque_3.png */,
+				C3545D9F175C90D20081D0FD /* cinque_4.png */,
+				C3545DA0175C90D40081D0FD /* florence_1.png */,
+				C3545DA1175C90D50081D0FD /* florence_2.png */,
+				C3545DA2175C90D70081D0FD /* florence_3.png */,
+				C3545DA3175C90D80081D0FD /* florence_4.png */,
+				C3545DA4175C90DA0081D0FD /* san_francisco_1.png */,
+				C3545DA5175C90DB0081D0FD /* san_francisco_2.png */,
+				C3545DA6175C90DD0081D0FD /* san_francisco_3.png */,
+				C3545DA7175C90DE0081D0FD /* san_francisco_4.png */,
 				C3545D80175C79DE0081D0FD /* athens_1.png */,
 				C3545D81175C79DE0081D0FD /* athens_2.png */,
 				C3545D82175C79E00081D0FD /* athens_3.png */,
@@ -1382,6 +1430,22 @@
 				C3545D95175C79EB0081D0FD /* istanbul_2.png in Resources */,
 				C3545D96175C79EB0081D0FD /* istanbul_3.png in Resources */,
 				C3545D97175C79EB0081D0FD /* istanbul_4.png in Resources */,
+				C3545DA8175C90E00081D0FD /* brugge_1.png in Resources */,
+				C3545DA9175C90E00081D0FD /* brugge_2.png in Resources */,
+				C3545DAA175C90E00081D0FD /* brugge_3.png in Resources */,
+				C3545DAB175C90E00081D0FD /* brugge_4.png in Resources */,
+				C3545DAC175C90E00081D0FD /* cinque_1.png in Resources */,
+				C3545DAD175C90E00081D0FD /* cinque_2.png in Resources */,
+				C3545DAE175C90E00081D0FD /* cinque_3.png in Resources */,
+				C3545DAF175C90E00081D0FD /* cinque_4.png in Resources */,
+				C3545DB0175C90E00081D0FD /* florence_1.png in Resources */,
+				C3545DB1175C90E00081D0FD /* florence_2.png in Resources */,
+				C3545DB2175C90E00081D0FD /* florence_3.png in Resources */,
+				C3545DB3175C90E00081D0FD /* florence_4.png in Resources */,
+				C3545DB4175C90E00081D0FD /* san_francisco_1.png in Resources */,
+				C3545DB5175C90E00081D0FD /* san_francisco_2.png in Resources */,
+				C3545DB6175C90E00081D0FD /* san_francisco_3.png in Resources */,
+				C3545DB7175C90E00081D0FD /* san_francisco_4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
