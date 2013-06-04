@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>title</key>
-		<string>Sports</string>
+		<string>Sports(NBA)</string>
 		<key>unique_id</key>
 		<string>SportCategory</string>
 		<key>image_name</key>
