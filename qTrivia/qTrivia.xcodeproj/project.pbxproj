@@ -336,6 +336,46 @@
 		C3811CC9175604C800353430 /* vlade-divac.png in Resources */ = {isa = PBXBuildFile; fileRef = C3811C64175604C800353430 /* vlade-divac.png */; };
 		C3811CCA175604C800353430 /* walt-bellamy.png in Resources */ = {isa = PBXBuildFile; fileRef = C3811C65175604C800353430 /* walt-bellamy.png */; };
 		C3811CCB175604C800353430 /* wilt-chamberlain.png in Resources */ = {isa = PBXBuildFile; fileRef = C3811C66175604C800353430 /* wilt-chamberlain.png */; };
+		C3BDCB1A175DB03900E63C2F /* bled_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB0A175DB03900E63C2F /* bled_1.png */; };
+		C3BDCB1B175DB03900E63C2F /* bled_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB0B175DB03900E63C2F /* bled_2.png */; };
+		C3BDCB1C175DB03900E63C2F /* bled_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB0C175DB03900E63C2F /* bled_3.png */; };
+		C3BDCB1D175DB03900E63C2F /* bled_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB0D175DB03900E63C2F /* bled_4.png */; };
+		C3BDCB1E175DB03900E63C2F /* lagos_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB0E175DB03900E63C2F /* lagos_1.png */; };
+		C3BDCB1F175DB03900E63C2F /* lagos_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB0F175DB03900E63C2F /* lagos_2.png */; };
+		C3BDCB20175DB03900E63C2F /* lagos_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB10175DB03900E63C2F /* lagos_3.png */; };
+		C3BDCB21175DB03900E63C2F /* lagos_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB11175DB03900E63C2F /* lagos_4.png */; };
+		C3BDCB22175DB03900E63C2F /* lisbon_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB12175DB03900E63C2F /* lisbon_1.png */; };
+		C3BDCB23175DB03900E63C2F /* lisbon_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB13175DB03900E63C2F /* lisbon_2.png */; };
+		C3BDCB24175DB03900E63C2F /* lisbon_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB14175DB03900E63C2F /* lisbon_3.png */; };
+		C3BDCB25175DB03900E63C2F /* lisbon_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB15175DB03900E63C2F /* lisbon_4.png */; };
+		C3BDCB26175DB03900E63C2F /* salzburg_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB16175DB03900E63C2F /* salzburg_1.png */; };
+		C3BDCB27175DB03900E63C2F /* salzburg_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB17175DB03900E63C2F /* salzburg_2.png */; };
+		C3BDCB28175DB03900E63C2F /* salzburg_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB18175DB03900E63C2F /* salzburg_3.png */; };
+		C3BDCB29175DB03900E63C2F /* salzburg_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB19175DB03900E63C2F /* salzburg_4.png */; };
+		C3BDCB36175DB1CA00E63C2F /* brussels_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB2A175DB1CA00E63C2F /* brussels_1.png */; };
+		C3BDCB37175DB1CA00E63C2F /* brussels_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB2B175DB1CA00E63C2F /* brussels_2.png */; };
+		C3BDCB38175DB1CA00E63C2F /* brussels_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB2C175DB1CA00E63C2F /* brussels_3.png */; };
+		C3BDCB39175DB1CA00E63C2F /* brussels_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB2D175DB1CA00E63C2F /* brussels_4.png */; };
+		C3BDCB3A175DB1CA00E63C2F /* dubai_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB2E175DB1CA00E63C2F /* dubai_1.png */; };
+		C3BDCB3B175DB1CA00E63C2F /* dubai_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB2F175DB1CA00E63C2F /* dubai_2.png */; };
+		C3BDCB3C175DB1CA00E63C2F /* dubai_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB30175DB1CA00E63C2F /* dubai_3.png */; };
+		C3BDCB3D175DB1CA00E63C2F /* dubai_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB31175DB1CA00E63C2F /* dubai_4.png */; };
+		C3BDCB3E175DB1CA00E63C2F /* hong_kong_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB32175DB1CA00E63C2F /* hong_kong_1.png */; };
+		C3BDCB3F175DB1CA00E63C2F /* hong_kong_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB33175DB1CA00E63C2F /* hong_kong_2.png */; };
+		C3BDCB40175DB1CA00E63C2F /* hong_kong_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB34175DB1CA00E63C2F /* hong_kong_3.png */; };
+		C3BDCB41175DB1CA00E63C2F /* hong_kong_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB35175DB1CA00E63C2F /* hong_kong_4.png */; };
+		C3BDCB4E175DB33000E63C2F /* brisbane_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB42175DB32F00E63C2F /* brisbane_1.png */; };
+		C3BDCB4F175DB33000E63C2F /* brisbane_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB43175DB32F00E63C2F /* brisbane_2.png */; };
+		C3BDCB50175DB33000E63C2F /* brisbane_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB44175DB33000E63C2F /* brisbane_3.png */; };
+		C3BDCB51175DB33000E63C2F /* brisbane_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB45175DB33000E63C2F /* brisbane_4.png */; };
+		C3BDCB52175DB33000E63C2F /* chiang_mai_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB46175DB33000E63C2F /* chiang_mai_1.png */; };
+		C3BDCB53175DB33000E63C2F /* chiang_mai_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB47175DB33000E63C2F /* chiang_mai_2.png */; };
+		C3BDCB54175DB33000E63C2F /* chiang_mai_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB48175DB33000E63C2F /* chiang_mai_3.png */; };
+		C3BDCB55175DB33000E63C2F /* chiang_mai_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB49175DB33000E63C2F /* chiang_mai_4.png */; };
+		C3BDCB56175DB33000E63C2F /* madrid_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB4A175DB33000E63C2F /* madrid_1.png */; };
+		C3BDCB57175DB33000E63C2F /* madrid_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB4B175DB33000E63C2F /* madrid_2.png */; };
+		C3BDCB58175DB33000E63C2F /* madrid_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB4C175DB33000E63C2F /* madrid_3.png */; };
+		C3BDCB59175DB33000E63C2F /* madrid_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BDCB4D175DB33000E63C2F /* madrid_4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -682,6 +722,46 @@
 		C3811C64175604C800353430 /* vlade-divac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vlade-divac.png"; sourceTree = "<group>"; };
 		C3811C65175604C800353430 /* walt-bellamy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walt-bellamy.png"; sourceTree = "<group>"; };
 		C3811C66175604C800353430 /* wilt-chamberlain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wilt-chamberlain.png"; sourceTree = "<group>"; };
+		C3BDCB0A175DB03900E63C2F /* bled_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bled_1.png; sourceTree = "<group>"; };
+		C3BDCB0B175DB03900E63C2F /* bled_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bled_2.png; sourceTree = "<group>"; };
+		C3BDCB0C175DB03900E63C2F /* bled_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bled_3.png; sourceTree = "<group>"; };
+		C3BDCB0D175DB03900E63C2F /* bled_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bled_4.png; sourceTree = "<group>"; };
+		C3BDCB0E175DB03900E63C2F /* lagos_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lagos_1.png; sourceTree = "<group>"; };
+		C3BDCB0F175DB03900E63C2F /* lagos_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lagos_2.png; sourceTree = "<group>"; };
+		C3BDCB10175DB03900E63C2F /* lagos_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lagos_3.png; sourceTree = "<group>"; };
+		C3BDCB11175DB03900E63C2F /* lagos_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lagos_4.png; sourceTree = "<group>"; };
+		C3BDCB12175DB03900E63C2F /* lisbon_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lisbon_1.png; sourceTree = "<group>"; };
+		C3BDCB13175DB03900E63C2F /* lisbon_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lisbon_2.png; sourceTree = "<group>"; };
+		C3BDCB14175DB03900E63C2F /* lisbon_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lisbon_3.png; sourceTree = "<group>"; };
+		C3BDCB15175DB03900E63C2F /* lisbon_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lisbon_4.png; sourceTree = "<group>"; };
+		C3BDCB16175DB03900E63C2F /* salzburg_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = salzburg_1.png; sourceTree = "<group>"; };
+		C3BDCB17175DB03900E63C2F /* salzburg_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = salzburg_2.png; sourceTree = "<group>"; };
+		C3BDCB18175DB03900E63C2F /* salzburg_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = salzburg_3.png; sourceTree = "<group>"; };
+		C3BDCB19175DB03900E63C2F /* salzburg_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = salzburg_4.png; sourceTree = "<group>"; };
+		C3BDCB2A175DB1CA00E63C2F /* brussels_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brussels_1.png; sourceTree = "<group>"; };
+		C3BDCB2B175DB1CA00E63C2F /* brussels_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brussels_2.png; sourceTree = "<group>"; };
+		C3BDCB2C175DB1CA00E63C2F /* brussels_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brussels_3.png; sourceTree = "<group>"; };
+		C3BDCB2D175DB1CA00E63C2F /* brussels_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brussels_4.png; sourceTree = "<group>"; };
+		C3BDCB2E175DB1CA00E63C2F /* dubai_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dubai_1.png; sourceTree = "<group>"; };
+		C3BDCB2F175DB1CA00E63C2F /* dubai_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dubai_2.png; sourceTree = "<group>"; };
+		C3BDCB30175DB1CA00E63C2F /* dubai_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dubai_3.png; sourceTree = "<group>"; };
+		C3BDCB31175DB1CA00E63C2F /* dubai_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dubai_4.png; sourceTree = "<group>"; };
+		C3BDCB32175DB1CA00E63C2F /* hong_kong_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hong_kong_1.png; sourceTree = "<group>"; };
+		C3BDCB33175DB1CA00E63C2F /* hong_kong_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hong_kong_2.png; sourceTree = "<group>"; };
+		C3BDCB34175DB1CA00E63C2F /* hong_kong_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hong_kong_3.png; sourceTree = "<group>"; };
+		C3BDCB35175DB1CA00E63C2F /* hong_kong_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hong_kong_4.png; sourceTree = "<group>"; };
+		C3BDCB42175DB32F00E63C2F /* brisbane_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brisbane_1.png; sourceTree = "<group>"; };
+		C3BDCB43175DB32F00E63C2F /* brisbane_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brisbane_2.png; sourceTree = "<group>"; };
+		C3BDCB44175DB33000E63C2F /* brisbane_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brisbane_3.png; sourceTree = "<group>"; };
+		C3BDCB45175DB33000E63C2F /* brisbane_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brisbane_4.png; sourceTree = "<group>"; };
+		C3BDCB46175DB33000E63C2F /* chiang_mai_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chiang_mai_1.png; sourceTree = "<group>"; };
+		C3BDCB47175DB33000E63C2F /* chiang_mai_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chiang_mai_2.png; sourceTree = "<group>"; };
+		C3BDCB48175DB33000E63C2F /* chiang_mai_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chiang_mai_3.png; sourceTree = "<group>"; };
+		C3BDCB49175DB33000E63C2F /* chiang_mai_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chiang_mai_4.png; sourceTree = "<group>"; };
+		C3BDCB4A175DB33000E63C2F /* madrid_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = madrid_1.png; sourceTree = "<group>"; };
+		C3BDCB4B175DB33000E63C2F /* madrid_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = madrid_2.png; sourceTree = "<group>"; };
+		C3BDCB4C175DB33000E63C2F /* madrid_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = madrid_3.png; sourceTree = "<group>"; };
+		C3BDCB4D175DB33000E63C2F /* madrid_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = madrid_4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -702,6 +782,46 @@
 		7A72B3A8175B619300D21A4A /* Places */ = {
 			isa = PBXGroup;
 			children = (
+				C3BDCB42175DB32F00E63C2F /* brisbane_1.png */,
+				C3BDCB43175DB32F00E63C2F /* brisbane_2.png */,
+				C3BDCB44175DB33000E63C2F /* brisbane_3.png */,
+				C3BDCB45175DB33000E63C2F /* brisbane_4.png */,
+				C3BDCB46175DB33000E63C2F /* chiang_mai_1.png */,
+				C3BDCB47175DB33000E63C2F /* chiang_mai_2.png */,
+				C3BDCB48175DB33000E63C2F /* chiang_mai_3.png */,
+				C3BDCB49175DB33000E63C2F /* chiang_mai_4.png */,
+				C3BDCB4A175DB33000E63C2F /* madrid_1.png */,
+				C3BDCB4B175DB33000E63C2F /* madrid_2.png */,
+				C3BDCB4C175DB33000E63C2F /* madrid_3.png */,
+				C3BDCB4D175DB33000E63C2F /* madrid_4.png */,
+				C3BDCB2A175DB1CA00E63C2F /* brussels_1.png */,
+				C3BDCB2B175DB1CA00E63C2F /* brussels_2.png */,
+				C3BDCB2C175DB1CA00E63C2F /* brussels_3.png */,
+				C3BDCB2D175DB1CA00E63C2F /* brussels_4.png */,
+				C3BDCB2E175DB1CA00E63C2F /* dubai_1.png */,
+				C3BDCB2F175DB1CA00E63C2F /* dubai_2.png */,
+				C3BDCB30175DB1CA00E63C2F /* dubai_3.png */,
+				C3BDCB31175DB1CA00E63C2F /* dubai_4.png */,
+				C3BDCB32175DB1CA00E63C2F /* hong_kong_1.png */,
+				C3BDCB33175DB1CA00E63C2F /* hong_kong_2.png */,
+				C3BDCB34175DB1CA00E63C2F /* hong_kong_3.png */,
+				C3BDCB35175DB1CA00E63C2F /* hong_kong_4.png */,
+				C3BDCB0A175DB03900E63C2F /* bled_1.png */,
+				C3BDCB0B175DB03900E63C2F /* bled_2.png */,
+				C3BDCB0C175DB03900E63C2F /* bled_3.png */,
+				C3BDCB0D175DB03900E63C2F /* bled_4.png */,
+				C3BDCB0E175DB03900E63C2F /* lagos_1.png */,
+				C3BDCB0F175DB03900E63C2F /* lagos_2.png */,
+				C3BDCB10175DB03900E63C2F /* lagos_3.png */,
+				C3BDCB11175DB03900E63C2F /* lagos_4.png */,
+				C3BDCB12175DB03900E63C2F /* lisbon_1.png */,
+				C3BDCB13175DB03900E63C2F /* lisbon_2.png */,
+				C3BDCB14175DB03900E63C2F /* lisbon_3.png */,
+				C3BDCB15175DB03900E63C2F /* lisbon_4.png */,
+				C3BDCB16175DB03900E63C2F /* salzburg_1.png */,
+				C3BDCB17175DB03900E63C2F /* salzburg_2.png */,
+				C3BDCB18175DB03900E63C2F /* salzburg_3.png */,
+				C3BDCB19175DB03900E63C2F /* salzburg_4.png */,
 				C3545DD0175C9D470081D0FD /* singapore_1.png */,
 				C3545DD1175C9D480081D0FD /* singapore_2.png */,
 				C3545DD2175C9D4B0081D0FD /* singapore_3.png */,
@@ -1564,6 +1684,46 @@
 				C3545DE5175C9D600081D0FD /* tokyo_2.png in Resources */,
 				C3545DE6175C9D600081D0FD /* tokyo_3.png in Resources */,
 				C3545DE7175C9D600081D0FD /* tokyo_4.png in Resources */,
+				C3BDCB1A175DB03900E63C2F /* bled_1.png in Resources */,
+				C3BDCB1B175DB03900E63C2F /* bled_2.png in Resources */,
+				C3BDCB1C175DB03900E63C2F /* bled_3.png in Resources */,
+				C3BDCB1D175DB03900E63C2F /* bled_4.png in Resources */,
+				C3BDCB1E175DB03900E63C2F /* lagos_1.png in Resources */,
+				C3BDCB1F175DB03900E63C2F /* lagos_2.png in Resources */,
+				C3BDCB20175DB03900E63C2F /* lagos_3.png in Resources */,
+				C3BDCB21175DB03900E63C2F /* lagos_4.png in Resources */,
+				C3BDCB22175DB03900E63C2F /* lisbon_1.png in Resources */,
+				C3BDCB23175DB03900E63C2F /* lisbon_2.png in Resources */,
+				C3BDCB24175DB03900E63C2F /* lisbon_3.png in Resources */,
+				C3BDCB25175DB03900E63C2F /* lisbon_4.png in Resources */,
+				C3BDCB26175DB03900E63C2F /* salzburg_1.png in Resources */,
+				C3BDCB27175DB03900E63C2F /* salzburg_2.png in Resources */,
+				C3BDCB28175DB03900E63C2F /* salzburg_3.png in Resources */,
+				C3BDCB29175DB03900E63C2F /* salzburg_4.png in Resources */,
+				C3BDCB36175DB1CA00E63C2F /* brussels_1.png in Resources */,
+				C3BDCB37175DB1CA00E63C2F /* brussels_2.png in Resources */,
+				C3BDCB38175DB1CA00E63C2F /* brussels_3.png in Resources */,
+				C3BDCB39175DB1CA00E63C2F /* brussels_4.png in Resources */,
+				C3BDCB3A175DB1CA00E63C2F /* dubai_1.png in Resources */,
+				C3BDCB3B175DB1CA00E63C2F /* dubai_2.png in Resources */,
+				C3BDCB3C175DB1CA00E63C2F /* dubai_3.png in Resources */,
+				C3BDCB3D175DB1CA00E63C2F /* dubai_4.png in Resources */,
+				C3BDCB3E175DB1CA00E63C2F /* hong_kong_1.png in Resources */,
+				C3BDCB3F175DB1CA00E63C2F /* hong_kong_2.png in Resources */,
+				C3BDCB40175DB1CA00E63C2F /* hong_kong_3.png in Resources */,
+				C3BDCB41175DB1CA00E63C2F /* hong_kong_4.png in Resources */,
+				C3BDCB4E175DB33000E63C2F /* brisbane_1.png in Resources */,
+				C3BDCB4F175DB33000E63C2F /* brisbane_2.png in Resources */,
+				C3BDCB50175DB33000E63C2F /* brisbane_3.png in Resources */,
+				C3BDCB51175DB33000E63C2F /* brisbane_4.png in Resources */,
+				C3BDCB52175DB33000E63C2F /* chiang_mai_1.png in Resources */,
+				C3BDCB53175DB33000E63C2F /* chiang_mai_2.png in Resources */,
+				C3BDCB54175DB33000E63C2F /* chiang_mai_3.png in Resources */,
+				C3BDCB55175DB33000E63C2F /* chiang_mai_4.png in Resources */,
+				C3BDCB56175DB33000E63C2F /* madrid_1.png in Resources */,
+				C3BDCB57175DB33000E63C2F /* madrid_2.png in Resources */,
+				C3BDCB58175DB33000E63C2F /* madrid_3.png in Resources */,
+				C3BDCB59175DB33000E63C2F /* madrid_4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

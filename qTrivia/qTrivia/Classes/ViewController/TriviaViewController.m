@@ -27,17 +27,9 @@
 {
     [super viewDidLoad];
     
-    [[NSNotificationCenter defaultCenter]
-     addObserver:self
-     selector:@selector(addWillStart:)
-     name:@"willStartAction"
-     object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(addWillStart:) name:@"willStartAction" object:nil];
     
-    [[NSNotificationCenter defaultCenter]
-     addObserver:self
-     selector:@selector(addDidFinish:)
-     name:@"didFinishAdsAction"
-     object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(addDidFinish:) name:@"didFinishAdsAction" object:nil];
     
     
     self.answerList = [[NSMutableArray alloc]init];
@@ -80,18 +72,16 @@
         default:
             break;
     }
-
+    
     [self setUpNewQuestion];
 }
 
 #pragma mark - ad
 -(void)addWillStart:(NSNotification *)notification {
-    NSLog(@"ADDDD");
     puase = YES;
 }
 
 -(void)addDidFinish:(NSNotification *)notification {
-    NSLog(@"ADDDD DONE!");
     puase = NO;
 }
 
@@ -101,10 +91,10 @@
 - (void)startCountdown
 {
     gameTimer = [NSTimer scheduledTimerWithTimeInterval:0.03
-                                     target:self
-                                   selector:@selector(advanceTimer:)
-                                   userInfo:nil
-                                    repeats:YES];
+                                                 target:self
+                                               selector:@selector(advanceTimer:)
+                                               userInfo:nil
+                                                repeats:YES];
 }
 
 - (void)advanceTimer:(NSTimer *)timer
@@ -202,7 +192,7 @@
 
 //- (IBAction)skipButtonPressed:(id)sender {
 //    [self setUpNewQuestion];
-//    
+//
 //    switch (self.gameMode) {
 //        case GameModeTimeAttack:
 //            timmerCounter -= 0.5f;
@@ -216,7 +206,7 @@
 //                self.skipButton.hidden = YES;
 //            }
 //            self.numberOfLife.text = [NSString stringWithFormat:@"%d",numOfLife];
-//        
+//
 //            break;
 //        default:
 //            break;
