@@ -662,5 +662,60 @@
 		<key>key_answer</key>
 		<string>59</string>
 	</dict>
+	<dict>
+		<key>image_array</key>
+		<array>
+			<string>wimblebon_1.png</string>
+			<string>wimblebon_2.png</string>
+			<string>wimblebon_3.png</string>
+			<string>wimblebon_4.png</string>
+		</array>
+		<key>key_answer</key>
+		<string>60</string>
+	</dict>
+	<dict>
+		<key>image_array</key>
+		<array>
+			<string>la_paz_1.png</string>
+			<string>la_paz_2.png</string>
+			<string>la_paz_3.png</string>
+			<string>la_paz_4.png</string>
+		</array>
+		<key>key_answer</key>
+		<string>61</string>
+	</dict>
+	<dict>
+		<key>image_array</key>
+		<array>
+			<string>cape_town_1.png</string>
+			<string>cape_town_2.png</string>
+			<string>cape_town_3.png</string>
+			<string>cape_town_4.png</string>
+		</array>
+		<key>key_answer</key>
+		<string>62</string>
+	</dict>
+	<dict>
+		<key>image_array</key>
+		<array>
+			<string>brighton_1.png</string>
+			<string>brighton_2.png</string>
+			<string>brighton_3.png</string>
+			<string>brighton_4.png</string>
+		</array>
+		<key>key_answer</key>
+		<string>63</string>
+	</dict>
+	<dict>
+		<key>image_array</key>
+		<array>
+			<string>dahab_1.png</string>
+			<string>dahab_2.png</string>
+			<string>dahab_3.png</string>
+			<string>dahab_4.png</string>
+		</array>
+		<key>key_answer</key>
+		<string>64</string>
+	</dict>
 </array>
 </plist>
