@@ -50,6 +50,9 @@
     
     [self performSegueWithIdentifier:@"goToTrivaVC" sender:self];
 }
+- (IBAction)didPressedBackButton:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     TriviaViewController *controller = segue.destinationViewController;

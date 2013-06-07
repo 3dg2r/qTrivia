@@ -59,6 +59,8 @@
 		7AFFF88D174FD71900C1D4D8 /* SportCategory_1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7AFFF88C174FD71900C1D4D8 /* SportCategory_1.plist */; };
 		7AFFF890174FDC0200C1D4D8 /* TriviaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFFF88F174FDC0200C1D4D8 /* TriviaViewController.m */; };
 		7AFFF892174FDE3500C1D4D8 /* SportCategoryAnswer_1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7AFFF891174FDE3500C1D4D8 /* SportCategoryAnswer_1.plist */; };
+		C339C79B1761B4160013DB24 /* LeaderboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C339C79A1761B4160013DB24 /* LeaderboardViewController.m */; };
+		C339C79E1761B4210013DB24 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C339C79D1761B4210013DB24 /* SettingsViewController.m */; };
 		C3545CDA175C46E10081D0FD /* button_blueline.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545CD4175C46E10081D0FD /* button_blueline.png */; };
 		C3545CDB175C46E10081D0FD /* button_blueline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545CD5175C46E10081D0FD /* button_blueline@2x.png */; };
 		C3545CDC175C46E10081D0FD /* button_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545CD6175C46E10081D0FD /* button_blue.png */; };
@@ -503,6 +505,10 @@
 		7AFFF88E174FDC0200C1D4D8 /* TriviaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriviaViewController.h; sourceTree = "<group>"; };
 		7AFFF88F174FDC0200C1D4D8 /* TriviaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriviaViewController.m; sourceTree = "<group>"; };
 		7AFFF891174FDE3500C1D4D8 /* SportCategoryAnswer_1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SportCategoryAnswer_1.plist; sourceTree = "<group>"; };
+		C339C7991761B4160013DB24 /* LeaderboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaderboardViewController.h; sourceTree = "<group>"; };
+		C339C79A1761B4160013DB24 /* LeaderboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaderboardViewController.m; sourceTree = "<group>"; };
+		C339C79C1761B4200013DB24 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		C339C79D1761B4210013DB24 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		C3545CD4175C46E10081D0FD /* button_blueline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_blueline.png; sourceTree = "<group>"; };
 		C3545CD5175C46E10081D0FD /* button_blueline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_blueline@2x.png"; sourceTree = "<group>"; };
 		C3545CD6175C46E10081D0FD /* button_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_blue.png; sourceTree = "<group>"; };
@@ -1270,6 +1276,10 @@
 				7AFFF88F174FDC0200C1D4D8 /* TriviaViewController.m */,
 				7AF0A1A117574E04007F3E71 /* ScoreListViewController.h */,
 				7AF0A1A217574E05007F3E71 /* ScoreListViewController.m */,
+				C339C7991761B4160013DB24 /* LeaderboardViewController.h */,
+				C339C79A1761B4160013DB24 /* LeaderboardViewController.m */,
+				C339C79C1761B4200013DB24 /* SettingsViewController.h */,
+				C339C79D1761B4210013DB24 /* SettingsViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1986,6 +1996,8 @@
 				7AF0A1A6175751FB007F3E71 /* SelectGameModeViewController.m in Sources */,
 				C3545DED175CA6810081D0FD /* AdBannerManager.m in Sources */,
 				C3545DF3175CAECB0081D0FD /* iAdView.m in Sources */,
+				C339C79B1761B4160013DB24 /* LeaderboardViewController.m in Sources */,
+				C339C79E1761B4210013DB24 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

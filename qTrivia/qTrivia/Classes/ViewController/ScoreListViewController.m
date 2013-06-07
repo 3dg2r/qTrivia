@@ -8,6 +8,7 @@
 
 #import "ScoreListViewController.h"
 #import "CategoryListViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface ScoreListViewController ()
 
@@ -27,12 +28,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.scoreLabel.text = self.score;
-    self.bonusScoreLabel.text = self.bonusScore;
+    
     int score = [self.score intValue];
     int bonusScore = [self.bonusScore intValue];
     int totScore = score + bonusScore;
-    self.totalScore.text = [NSString stringWithFormat:@"%d",totScore];
+    self.scoreLabel.text = [NSString stringWithFormat:@"%d",totScore];
+    
+    self.tableView.layer.borderColor = [UIColor colorWithRed:(CGFloat)(86/255.0f) green:(CGFloat)(171/255.0f) blue:(CGFloat)(8/255.0f) alpha:1].CGColor;
+    self.tableView.layer.borderWidth = 4;
+    self.tableView.layer.cornerRadius = 5;
 	// Do any additional setup after loading the view.
 }
 
@@ -55,10 +59,15 @@
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
+#pragma mark - UITableView Delegate and Datasource
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 0;
+}
+
 - (void)viewDidUnload {
     [self setScoreLabel:nil];
-    [self setTotalScore:nil];
-    [self setBonusScoreLabel:nil];
+    [self setTableView:nil];
     [super viewDidUnload];
 }
 @end
