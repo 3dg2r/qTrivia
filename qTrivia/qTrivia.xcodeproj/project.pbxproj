@@ -63,6 +63,19 @@
 		C339C79E1761B4210013DB24 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C339C79D1761B4210013DB24 /* SettingsViewController.m */; };
 		C339C7A21761B6EC0013DB24 /* PauseMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = C339C7A11761B6EC0013DB24 /* PauseMenuView.m */; };
 		C339C7A41761B6F70013DB24 /* PauseMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C339C7A31761B6F70013DB24 /* PauseMenuView.xib */; };
+		C339C7A61761BC5E0013DB24 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C339C7A51761BC5E0013DB24 /* libsqlite3.0.dylib */; };
+		C339C7A91761BCB10013DB24 /* FMDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C339C7A81761BCB10013DB24 /* FMDBHelper.m */; };
+		C339C7DD1761BFB20013DB24 /* qTrivia_1.xml in Resources */ = {isa = PBXBuildFile; fileRef = C339C7DC1761BFB20013DB24 /* qTrivia_1.xml */; };
+		C339C7E21761C4A80013DB24 /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C339C7E11761C4A80013DB24 /* FMDBManager.m */; };
+		C339C7E81761CA7E0013DB24 /* SaveToLeaderboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = C339C7E71761CA7E0013DB24 /* SaveToLeaderboardView.m */; };
+		C339C7EA1761CA8A0013DB24 /* SaveToLeaderboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C339C7E91761CA8A0013DB24 /* SaveToLeaderboardView.xib */; };
+		C339C80B1761DB740013DB24 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C339C7FB1761DB740013DB24 /* FMDatabase.m */; };
+		C339C80C1761DB740013DB24 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C339C7FD1761DB740013DB24 /* FMDatabaseAdditions.m */; };
+		C339C80D1761DB740013DB24 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = C339C7FF1761DB740013DB24 /* FMDatabasePool.m */; };
+		C339C80E1761DB740013DB24 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C339C8011761DB740013DB24 /* FMDatabaseQueue.m */; };
+		C339C8101761DB740013DB24 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C339C8041761DB740013DB24 /* FMResultSet.m */; };
+		C339C81A1761DF560013DB24 /* LeaderboardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C339C8191761DF560013DB24 /* LeaderboardCell.m */; };
+		C339C81C1761DF640013DB24 /* LeaderboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C339C81B1761DF640013DB24 /* LeaderboardCell.xib */; };
 		C3545CDA175C46E10081D0FD /* button_blueline.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545CD4175C46E10081D0FD /* button_blueline.png */; };
 		C3545CDB175C46E10081D0FD /* button_blueline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545CD5175C46E10081D0FD /* button_blueline@2x.png */; };
 		C3545CDC175C46E10081D0FD /* button_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545CD6175C46E10081D0FD /* button_blue.png */; };
@@ -514,6 +527,29 @@
 		C339C7A01761B6EC0013DB24 /* PauseMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseMenuView.h; sourceTree = "<group>"; };
 		C339C7A11761B6EC0013DB24 /* PauseMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PauseMenuView.m; sourceTree = "<group>"; };
 		C339C7A31761B6F70013DB24 /* PauseMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PauseMenuView.xib; sourceTree = "<group>"; };
+		C339C7A51761BC5E0013DB24 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		C339C7A71761BCB10013DB24 /* FMDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBHelper.h; sourceTree = "<group>"; };
+		C339C7A81761BCB10013DB24 /* FMDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBHelper.m; sourceTree = "<group>"; };
+		C339C7DA1761BD610013DB24 /* CommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonFunctions.h; sourceTree = "<group>"; };
+		C339C7DC1761BFB20013DB24 /* qTrivia_1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = qTrivia_1.xml; sourceTree = "<group>"; };
+		C339C7E01761C4A80013DB24 /* FMDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBManager.h; sourceTree = "<group>"; };
+		C339C7E11761C4A80013DB24 /* FMDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBManager.m; sourceTree = "<group>"; };
+		C339C7E61761CA7E0013DB24 /* SaveToLeaderboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveToLeaderboardView.h; sourceTree = "<group>"; };
+		C339C7E71761CA7E0013DB24 /* SaveToLeaderboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveToLeaderboardView.m; sourceTree = "<group>"; };
+		C339C7E91761CA8A0013DB24 /* SaveToLeaderboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SaveToLeaderboardView.xib; sourceTree = "<group>"; };
+		C339C7FA1761DB740013DB24 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		C339C7FB1761DB740013DB24 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		C339C7FC1761DB740013DB24 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		C339C7FD1761DB740013DB24 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		C339C7FE1761DB740013DB24 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		C339C7FF1761DB740013DB24 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		C339C8001761DB740013DB24 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		C339C8011761DB740013DB24 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		C339C8031761DB740013DB24 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		C339C8041761DB740013DB24 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		C339C8181761DF560013DB24 /* LeaderboardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaderboardCell.h; sourceTree = "<group>"; };
+		C339C8191761DF560013DB24 /* LeaderboardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaderboardCell.m; sourceTree = "<group>"; };
+		C339C81B1761DF640013DB24 /* LeaderboardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeaderboardCell.xib; sourceTree = "<group>"; };
 		C3545CD4175C46E10081D0FD /* button_blueline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_blueline.png; sourceTree = "<group>"; };
 		C3545CD5175C46E10081D0FD /* button_blueline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_blueline@2x.png"; sourceTree = "<group>"; };
 		C3545CD6175C46E10081D0FD /* button_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_blue.png; sourceTree = "<group>"; };
@@ -900,6 +936,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C339C7A61761BC5E0013DB24 /* libsqlite3.0.dylib in Frameworks */,
 				C3545DF0175CA69A0081D0FD /* iAd.framework in Frameworks */,
 				7AFFF84B174FCC7000C1D4D8 /* UIKit.framework in Frameworks */,
 				7AFFF84D174FCC7000C1D4D8 /* Foundation.framework in Frameworks */,
@@ -1199,6 +1236,7 @@
 			isa = PBXGroup;
 			children = (
 				7AFFF850174FCC7000C1D4D8 /* qTrivia */,
+				C339C7AA1761BCBD0013DB24 /* Libraries */,
 				7AFFF849174FCC7000C1D4D8 /* Frameworks */,
 				7AFFF848174FCC7000C1D4D8 /* Products */,
 			);
@@ -1215,6 +1253,7 @@
 		7AFFF849174FCC7000C1D4D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C339C7A51761BC5E0013DB24 /* libsqlite3.0.dylib */,
 				C3545DEF175CA69A0081D0FD /* iAd.framework */,
 				7AFFF84A174FCC7000C1D4D8 /* UIKit.framework */,
 				7AFFF84C174FCC7000C1D4D8 /* Foundation.framework */,
@@ -1226,6 +1265,7 @@
 		7AFFF850174FCC7000C1D4D8 /* qTrivia */ = {
 			isa = PBXGroup;
 			children = (
+				C339C7DB1761BFB20013DB24 /* Scheme */,
 				C339C79F1761B6D90013DB24 /* View */,
 				7AFFF87C174FCF6500C1D4D8 /* Common */,
 				7AFFF87D174FCF6500C1D4D8 /* Plist */,
@@ -1314,8 +1354,13 @@
 		7AFFF880174FD01900C1D4D8 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				C339C7DA1761BD610013DB24 /* CommonFunctions.h */,
+				C339C7A71761BCB10013DB24 /* FMDBHelper.h */,
+				C339C7A81761BCB10013DB24 /* FMDBHelper.m */,
 				7AFFF881174FD01900C1D4D8 /* PlistHelper.h */,
 				7AFFF882174FD01900C1D4D8 /* PlistHelper.m */,
+				C339C7E01761C4A80013DB24 /* FMDBManager.h */,
+				C339C7E11761C4A80013DB24 /* FMDBManager.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -1326,6 +1371,9 @@
 				7AFFF885174FD0D300C1D4D8 /* CategoryListCell.h */,
 				7AFFF886174FD0D300C1D4D8 /* CategoryListCell.m */,
 				7AFFF888174FD0FB00C1D4D8 /* CategoryListCell.xib */,
+				C339C8181761DF560013DB24 /* LeaderboardCell.h */,
+				C339C8191761DF560013DB24 /* LeaderboardCell.m */,
+				C339C81B1761DF640013DB24 /* LeaderboardCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1345,8 +1393,52 @@
 				C339C7A01761B6EC0013DB24 /* PauseMenuView.h */,
 				C339C7A11761B6EC0013DB24 /* PauseMenuView.m */,
 				C339C7A31761B6F70013DB24 /* PauseMenuView.xib */,
+				C339C7E61761CA7E0013DB24 /* SaveToLeaderboardView.h */,
+				C339C7E71761CA7E0013DB24 /* SaveToLeaderboardView.m */,
+				C339C7E91761CA8A0013DB24 /* SaveToLeaderboardView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C339C7AA1761BCBD0013DB24 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				C339C7EE1761DB740013DB24 /* FMDB */,
+			);
+			path = Libraries;
+			sourceTree = SOURCE_ROOT;
+		};
+		C339C7DB1761BFB20013DB24 /* Scheme */ = {
+			isa = PBXGroup;
+			children = (
+				C339C7DC1761BFB20013DB24 /* qTrivia_1.xml */,
+			);
+			path = Scheme;
+			sourceTree = "<group>";
+		};
+		C339C7EE1761DB740013DB24 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				C339C7F91761DB740013DB24 /* src */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		C339C7F91761DB740013DB24 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				C339C7FA1761DB740013DB24 /* FMDatabase.h */,
+				C339C7FB1761DB740013DB24 /* FMDatabase.m */,
+				C339C7FC1761DB740013DB24 /* FMDatabaseAdditions.h */,
+				C339C7FD1761DB740013DB24 /* FMDatabaseAdditions.m */,
+				C339C7FE1761DB740013DB24 /* FMDatabasePool.h */,
+				C339C7FF1761DB740013DB24 /* FMDatabasePool.m */,
+				C339C8001761DB740013DB24 /* FMDatabaseQueue.h */,
+				C339C8011761DB740013DB24 /* FMDatabaseQueue.m */,
+				C339C8031761DB740013DB24 /* FMResultSet.h */,
+				C339C8041761DB740013DB24 /* FMResultSet.m */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 		C3545DE8175CA6810081D0FD /* iAd */ = {
@@ -1991,6 +2083,9 @@
 				C3BDCBD0175DD86A00E63C2F /* wimblebon_3.png in Resources */,
 				C3BDCBD1175DD86A00E63C2F /* wimblebon_4.png in Resources */,
 				C339C7A41761B6F70013DB24 /* PauseMenuView.xib in Resources */,
+				C339C7DD1761BFB20013DB24 /* qTrivia_1.xml in Resources */,
+				C339C7EA1761CA8A0013DB24 /* SaveToLeaderboardView.xib in Resources */,
+				C339C81C1761DF640013DB24 /* LeaderboardCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2016,6 +2111,15 @@
 				C339C79B1761B4160013DB24 /* LeaderboardViewController.m in Sources */,
 				C339C79E1761B4210013DB24 /* SettingsViewController.m in Sources */,
 				C339C7A21761B6EC0013DB24 /* PauseMenuView.m in Sources */,
+				C339C7A91761BCB10013DB24 /* FMDBHelper.m in Sources */,
+				C339C7E21761C4A80013DB24 /* FMDBManager.m in Sources */,
+				C339C7E81761CA7E0013DB24 /* SaveToLeaderboardView.m in Sources */,
+				C339C80B1761DB740013DB24 /* FMDatabase.m in Sources */,
+				C339C80C1761DB740013DB24 /* FMDatabaseAdditions.m in Sources */,
+				C339C80D1761DB740013DB24 /* FMDatabasePool.m in Sources */,
+				C339C80E1761DB740013DB24 /* FMDatabaseQueue.m in Sources */,
+				C339C8101761DB740013DB24 /* FMResultSet.m in Sources */,
+				C339C81A1761DF560013DB24 /* LeaderboardCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2102,8 +2206,13 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "qTrivia/qTrivia-Prefix.pch";
+				HEADER_SEARCH_PATHS = "Libraries/**";
 				INFOPLIST_FILE = "qTrivia/qTrivia-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -2114,8 +2223,13 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "qTrivia/qTrivia-Prefix.pch";
+				HEADER_SEARCH_PATHS = "Libraries/**";
 				INFOPLIST_FILE = "qTrivia/qTrivia-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

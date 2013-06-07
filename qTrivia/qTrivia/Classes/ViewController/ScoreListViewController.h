@@ -7,10 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SaveToLeaderboardView.h"
+#import "FMDBManager.h"
+#import "LeaderboardCell.h"
 
-@interface ScoreListViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
+@interface ScoreListViewController : UIViewController <UITableViewDelegate,UITableViewDataSource,SaveToLeaderboardViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (nonatomic,copy) NSString *score;
 @property (nonatomic,copy) NSString *bonusScore;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, retain)NSDictionary *categoryDic;
+@property (nonatomic,retain) NSMutableDictionary *dicToBeSave;
+@property (nonatomic,retain) NSArray *arrayOfScores;
 @end

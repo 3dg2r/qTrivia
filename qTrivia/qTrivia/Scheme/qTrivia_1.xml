@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <array>
+        <string>
+            CREATE TABLE IF NOT EXISTS leaderboard (
+                category_id VARCHAR NOT NULL
+                ,name VARCHAR NOT NULL
+                ,score VARCHAR NOT NULL
+                ,version_1 INTEGER 
+            );
+        </string>
+    </array>
+</plist>

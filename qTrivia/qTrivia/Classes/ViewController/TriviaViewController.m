@@ -123,6 +123,7 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     ScoreListViewController *controller = segue.destinationViewController;
     controller.score = [NSString stringWithFormat:@"%d",score];
+    controller.categoryDic = self.categoryDictionary;
     if (timmerCounter < 0) {
         timmerCounter = 0;
     }

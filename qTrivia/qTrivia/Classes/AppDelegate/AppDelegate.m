@@ -7,12 +7,20 @@
 //
 
 #import "AppDelegate.h"
+#import "FMDBHelper.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    FMDBHelper *helper = [FMDBHelper sharedFMDBHelper];
+    if ([helper openDatabaseWithFileName:@"qTrivia"]) {
+        [helper initializeDatabaseWithXMLName:@"qTrivia"];
+    }
+
+    
     return YES;
 }
 							

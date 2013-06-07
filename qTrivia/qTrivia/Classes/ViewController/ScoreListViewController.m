@@ -37,6 +37,11 @@
     self.tableView.layer.borderColor = [UIColor colorWithRed:(CGFloat)(86/255.0f) green:(CGFloat)(171/255.0f) blue:(CGFloat)(8/255.0f) alpha:1].CGColor;
     self.tableView.layer.borderWidth = 4;
     self.tableView.layer.cornerRadius = 5;
+    self.dicToBeSave = [[NSMutableDictionary alloc]init];
+    [self.dicToBeSave setObject:[self.categoryDic objectForKey:@"unique_id"] forKey:@"category_id"];
+    [self.dicToBeSave setObject:[NSString stringWithFormat:@"%d",totScore] forKey:@"score"];
+    self.arrayOfScores = [FMDBManager getScoreByCategory:[self.categoryDic objectForKey:@"unique_id"]];
+    [self.tableView reloadData];
 	// Do any additional setup after loading the view.
 }
 
@@ -58,11 +63,53 @@
 - (IBAction)goToMainMenuButtonPressed:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
+- (IBAction)didPressedSaveToLeaderboard:(id)sender {
+    NSArray* array = [[NSBundle mainBundle] loadNibNamed:@"SaveToLeaderboardView" owner:nil options:nil];
+    SaveToLeaderboardView * popupView = [array objectAtIndex: 0];
+    popupView.delegate = self;
+    popupView.tag = 1;
+    popupView.frame = self.view.frame;
+    popupView.center = self.view.center;
+    [self.view addSubview:popupView];
+    [popupView show];
+}
+
+#pragma mark - SaveToLeaderBoardView delegate
+
+-(void)didPressedSubmitButton:(SaveToLeaderboardView *)view andName:(NSString *)name {
+   
+    NSString *nameOfUser = [name copy];
+    [self.dicToBeSave setObject:nameOfUser forKey:@"name"];
+    if ([FMDBManager addHighScoreToLeaderBoard:self.dicToBeSave]) {
+        self.arrayOfScores = [FMDBManager getScoreByCategory:[self.categoryDic objectForKey:@"unique_id"]];
+        [self.tableView reloadData];
+    }
+    [view removeFromSuperview];
+}
 
 #pragma mark - UITableView Delegate and Datasource
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return self.arrayOfScores.count;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    LeaderboardCell *cell = (LeaderboardCell*) [tableView dequeueReusableCellWithIdentifier: @"CellForRowInLeaderboardList"];
+    
+    if(cell == nil) {
+        NSArray* array = [[NSBundle mainBundle] loadNibNamed:@"LeaderboardCell" owner:nil options:nil];
+        
+        cell = [array objectAtIndex: 0];
+    }
+    cell.scoreLabel.text = [[self.arrayOfScores objectAtIndex:indexPath.row]objectForKey:@"score"];
+    cell.nameLabel.text = [[self.arrayOfScores objectAtIndex:indexPath.row]objectForKey:@"name"];
+    
+    return cell;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 30.0f;
 }
 
 - (void)viewDidUnload {
