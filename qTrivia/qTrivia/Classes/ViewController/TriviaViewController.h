@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "NSMutableArray+Shuffling.h"
+#import "PauseMenuView.h"
 
 typedef enum {
 	GameModeTimeAttack = 0,
@@ -15,7 +16,7 @@ typedef enum {
 	GameModeRelax,
 } GameMode;
 
-@interface TriviaViewController : UIViewController {
+@interface TriviaViewController : UIViewController <PauseMenuViewDelegate>{
     int counter,streak,score,numOfLife;
     float timmerCounter;
     NSTimer *gameTimer;

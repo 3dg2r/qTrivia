@@ -33,6 +33,33 @@
     
     
     self.answerList = [[NSMutableArray alloc]init];
+    
+    self.triviaImage1.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.triviaImage1.layer.borderWidth = 4;
+    self.triviaImage2.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.triviaImage2.layer.borderWidth = 4;
+    self.triviaImage3.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.triviaImage3.layer.borderWidth = 4;
+    self.triviaImage4.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.triviaImage4.layer.borderWidth = 4;
+    
+    [self restart];
+    
+}
+
+#pragma mark - ad
+-(void)addWillStart:(NSNotification *)notification {
+    puase = YES;
+}
+
+-(void)addDidFinish:(NSNotification *)notification {
+    puase = NO;
+}
+
+#pragma mark - restart Button Pressed 
+
+-(void)restart {
+    [self.categoryArray removeAllObjects];
     NSString *categoryPlistName = [NSString stringWithFormat:@"%@_1",[self.categoryDictionary objectForKey:@"unique_id"]];
     self.categoryArray = [[PlistHelper getArray:categoryPlistName]mutableCopy];
     //shuffle category
@@ -43,14 +70,7 @@
     score = 0;
     numOfLife = NUMOFLIFE;
     
-    self.triviaImage1.layer.borderColor = [UIColor lightGrayColor].CGColor;
-    self.triviaImage1.layer.borderWidth = 4;
-    self.triviaImage2.layer.borderColor = [UIColor lightGrayColor].CGColor;
-    self.triviaImage2.layer.borderWidth = 4;
-    self.triviaImage3.layer.borderColor = [UIColor lightGrayColor].CGColor;
-    self.triviaImage3.layer.borderWidth = 4;
-    self.triviaImage4.layer.borderColor = [UIColor lightGrayColor].CGColor;
-    self.triviaImage4.layer.borderWidth = 4;
+    self.scoreLabel.text = @"";
     
     switch (self.gameMode) {
         case GameModeTimeAttack:
@@ -74,18 +94,8 @@
     }
     
     [self setUpNewQuestion];
-}
-
-#pragma mark - ad
--(void)addWillStart:(NSNotification *)notification {
-    puase = YES;
-}
-
--(void)addDidFinish:(NSNotification *)notification {
     puase = NO;
 }
-
-
 #pragma mark - set up timer
 
 - (void)startCountdown
@@ -188,30 +198,33 @@
 #pragma mark - button pressed
 
 - (IBAction)menuButtonPressed:(id)sender {
+    puase = YES;
+    NSArray* array = [[NSBundle mainBundle] loadNibNamed:@"PauseMenuView" owner:nil options:nil];
+    PauseMenuView * popupView = [array objectAtIndex: 0];
+    popupView.delegate = self;
+    popupView.tag = 1;
+    popupView.frame = self.view.frame;
+    popupView.center = self.view.center;
+    [self.view addSubview:popupView];
+    [popupView show];
 }
 
-//- (IBAction)skipButtonPressed:(id)sender {
-//    [self setUpNewQuestion];
-//
-//    switch (self.gameMode) {
-//        case GameModeTimeAttack:
-//            timmerCounter -= 0.5f;
-//            break;
-//        case GameModeSurvival:
-//            timmerCounter -= 0.5f;
-//            break;
-//        case GameModeRelax:
-//            numOfLife -= 1;
-//            if (numOfLife == 1) {
-//                self.skipButton.hidden = YES;
-//            }
-//            self.numberOfLife.text = [NSString stringWithFormat:@"%d",numOfLife];
-//
-//            break;
-//        default:
-//            break;
-//    }
-//}
+#pragma mark - pause menu delegate 
+
+-(void)didPressedResumeButton:(PauseMenuView *)view {
+    [view removeFromSuperview];
+    puase = NO;
+}
+
+-(void)didPressedRestartButton:(PauseMenuView *)view {
+    [view removeFromSuperview];
+    [self restart];
+}
+
+-(void)didPressedMenuButton:(PauseMenuView *)view {
+    [view removeFromSuperview];
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 
 - (IBAction)answerPressed:(id)sender {
     UIButton *button = (UIButton *)sender;

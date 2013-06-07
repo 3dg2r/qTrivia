@@ -61,6 +61,8 @@
 		7AFFF892174FDE3500C1D4D8 /* SportCategoryAnswer_1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7AFFF891174FDE3500C1D4D8 /* SportCategoryAnswer_1.plist */; };
 		C339C79B1761B4160013DB24 /* LeaderboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C339C79A1761B4160013DB24 /* LeaderboardViewController.m */; };
 		C339C79E1761B4210013DB24 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C339C79D1761B4210013DB24 /* SettingsViewController.m */; };
+		C339C7A21761B6EC0013DB24 /* PauseMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = C339C7A11761B6EC0013DB24 /* PauseMenuView.m */; };
+		C339C7A41761B6F70013DB24 /* PauseMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C339C7A31761B6F70013DB24 /* PauseMenuView.xib */; };
 		C3545CDA175C46E10081D0FD /* button_blueline.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545CD4175C46E10081D0FD /* button_blueline.png */; };
 		C3545CDB175C46E10081D0FD /* button_blueline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545CD5175C46E10081D0FD /* button_blueline@2x.png */; };
 		C3545CDC175C46E10081D0FD /* button_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = C3545CD6175C46E10081D0FD /* button_blue.png */; };
@@ -509,6 +511,9 @@
 		C339C79A1761B4160013DB24 /* LeaderboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaderboardViewController.m; sourceTree = "<group>"; };
 		C339C79C1761B4200013DB24 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		C339C79D1761B4210013DB24 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		C339C7A01761B6EC0013DB24 /* PauseMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseMenuView.h; sourceTree = "<group>"; };
+		C339C7A11761B6EC0013DB24 /* PauseMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PauseMenuView.m; sourceTree = "<group>"; };
+		C339C7A31761B6F70013DB24 /* PauseMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PauseMenuView.xib; sourceTree = "<group>"; };
 		C3545CD4175C46E10081D0FD /* button_blueline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_blueline.png; sourceTree = "<group>"; };
 		C3545CD5175C46E10081D0FD /* button_blueline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_blueline@2x.png"; sourceTree = "<group>"; };
 		C3545CD6175C46E10081D0FD /* button_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_blue.png; sourceTree = "<group>"; };
@@ -1221,6 +1226,7 @@
 		7AFFF850174FCC7000C1D4D8 /* qTrivia */ = {
 			isa = PBXGroup;
 			children = (
+				C339C79F1761B6D90013DB24 /* View */,
 				7AFFF87C174FCF6500C1D4D8 /* Common */,
 				7AFFF87D174FCF6500C1D4D8 /* Plist */,
 				7AFFF870174FCE6F00C1D4D8 /* Classes */,
@@ -1331,6 +1337,16 @@
 				7AFFF891174FDE3500C1D4D8 /* SportCategoryAnswer_1.plist */,
 			);
 			path = SportCategory;
+			sourceTree = "<group>";
+		};
+		C339C79F1761B6D90013DB24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C339C7A01761B6EC0013DB24 /* PauseMenuView.h */,
+				C339C7A11761B6EC0013DB24 /* PauseMenuView.m */,
+				C339C7A31761B6F70013DB24 /* PauseMenuView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		C3545DE8175CA6810081D0FD /* iAd */ = {
@@ -1974,6 +1990,7 @@
 				C3BDCBCF175DD86A00E63C2F /* wimblebon_2.png in Resources */,
 				C3BDCBD0175DD86A00E63C2F /* wimblebon_3.png in Resources */,
 				C3BDCBD1175DD86A00E63C2F /* wimblebon_4.png in Resources */,
+				C339C7A41761B6F70013DB24 /* PauseMenuView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1998,6 +2015,7 @@
 				C3545DF3175CAECB0081D0FD /* iAdView.m in Sources */,
 				C339C79B1761B4160013DB24 /* LeaderboardViewController.m in Sources */,
 				C339C79E1761B4210013DB24 /* SettingsViewController.m in Sources */,
+				C339C7A21761B6EC0013DB24 /* PauseMenuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
