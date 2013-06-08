@@ -6,7 +6,7 @@
             CREATE TABLE IF NOT EXISTS leaderboard (
                 category_id VARCHAR NOT NULL
                 ,name VARCHAR NOT NULL
-                ,score VARCHAR NOT NULL
+                ,score INTEGER
                 ,version_1 INTEGER 
             );
         </string>

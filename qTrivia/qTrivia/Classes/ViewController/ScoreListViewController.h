@@ -11,7 +11,9 @@
 #import "FMDBManager.h"
 #import "LeaderboardCell.h"
 
-@interface ScoreListViewController : UIViewController <UITableViewDelegate,UITableViewDataSource,SaveToLeaderboardViewDelegate>
+@interface ScoreListViewController : UIViewController <UITableViewDelegate,UITableViewDataSource,SaveToLeaderboardViewDelegate> {
+    int totScore;
+}
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (nonatomic,copy) NSString *score;
 @property (nonatomic,copy) NSString *bonusScore;

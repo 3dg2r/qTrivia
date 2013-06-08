@@ -21,8 +21,18 @@
 
 - (IBAction)didPressedSubmitButton:(id)sender {
     [self hide];
+    if (!self.name) {
+        self.name = @" ";
+    }
+    
     if ([_delegate respondsToSelector:@selector(didPressedSubmitButton:andName:)]) {
         [_delegate didPressedSubmitButton:self andName:self.name];
+    }
+}
+- (IBAction)backButtonPressed:(id)sender {
+    [self hide];
+    if ([_delegate respondsToSelector:@selector(didPressedBackButton:)]) {
+        [_delegate didPressedBackButton:self];
     }
 }
 

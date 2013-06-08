@@ -11,7 +11,7 @@
 
 @implementation FMDBManager
 
-+(BOOL)addHighScoreToLeaderBoard:(NSDictionary *)dictionary {
++(BOOL)addHighScoreToLeaderBoard:(NSDictionary *)dictionary withScore:(NSNumber*)score {
     FMDBHelper *helper = [FMDBHelper sharedFMDBHelper];
     NSString* sql = @"INSERT INTO leaderboard ("
     @"       category_id"
@@ -19,13 +19,13 @@
     @"      ,score"
     @" )"
     @" VALUES (?,?,?)";
-    return  ([helper.database executeUpdate: sql, [dictionary objectForKey:@"category_id"],[dictionary objectForKey:@"name"],[dictionary objectForKey:@"score"]]);
+    return  ([helper.database executeUpdate: sql, [dictionary objectForKey:@"category_id"],[dictionary objectForKey:@"name"],score]);
     
 }
 
 +(NSArray*)getAllScores {
     FMDBHelper *helper = [FMDBHelper sharedFMDBHelper];
-    NSString* sql = @"SELECT * FROM leaderboard ORDER BY score ASC";
+    NSString* sql = @"SELECT * FROM leaderboard ORDER BY score DESC";
     
     NSMutableArray* scoreArray = [NSMutableArray array];
     
@@ -34,7 +34,8 @@
         NSMutableDictionary *dictionary = [[NSMutableDictionary alloc]init];
         [dictionary setObject:[rs stringForColumn: @"category_id"] forKey:@"category_id"];
         [dictionary setObject:[rs stringForColumn: @"name"] forKey:@"name"];
-        [dictionary setObject:[rs stringForColumn: @"score"] forKey:@"score"];
+        NSNumber *number = [NSNumber numberWithInt:[rs intForColumn: @"score"]];
+        [dictionary setObject:number forKey:@"score"];
         [scoreArray addObject: dictionary];
     }
     
@@ -43,7 +44,7 @@
 
 +(NSArray *)getScoreByCategory:(NSString *)category {
     FMDBHelper *helper = [FMDBHelper sharedFMDBHelper];
-    NSString* sql = @"SELECT * FROM leaderboard WHERE category_id = ? ORDER BY score ASC";
+    NSString* sql = @"SELECT * FROM leaderboard WHERE category_id = ? ORDER BY score DESC";
     
     NSMutableArray* scoreArray = [NSMutableArray array];
     
@@ -52,7 +53,8 @@
         NSMutableDictionary *dictionary = [[NSMutableDictionary alloc]init];
         [dictionary setObject:[rs stringForColumn: @"category_id"] forKey:@"category_id"];
         [dictionary setObject:[rs stringForColumn: @"name"] forKey:@"name"];
-        [dictionary setObject:[rs stringForColumn: @"score"] forKey:@"score"];
+        NSNumber *number = [NSNumber numberWithInt:[rs intForColumn: @"score"]];
+        [dictionary setObject:number forKey:@"score"];
         [scoreArray addObject: dictionary];
     }
     

@@ -13,6 +13,8 @@
 
 -(void)didPressedSubmitButton:(SaveToLeaderboardView *)view andName:(NSString *)name;
 
+-(void)didPressedBackButton:(SaveToLeaderboardView *)view;
+
 @end
 
 @interface SaveToLeaderboardView : UIView <UITextFieldDelegate>{

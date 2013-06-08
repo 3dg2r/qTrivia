@@ -51,7 +51,7 @@
         
         cell = [array objectAtIndex: 0];
     }
-    cell.scoreLabel.text = [[self.arrayOfScores objectAtIndex:indexPath.row]objectForKey:@"score"];
+    cell.scoreLabel.text = [[[self.arrayOfScores objectAtIndex:indexPath.row]objectForKey:@"score"] stringValue];
     cell.nameLabel.text = [[self.arrayOfScores objectAtIndex:indexPath.row]objectForKey:@"name"];
     
     return cell;

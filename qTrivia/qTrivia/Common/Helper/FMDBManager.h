@@ -10,7 +10,7 @@
 
 @interface FMDBManager : NSObject
 
-+(BOOL)addHighScoreToLeaderBoard:(NSDictionary *)dictionary;
++(BOOL)addHighScoreToLeaderBoard:(NSDictionary *)dictionary withScore:(NSNumber*)score;
 +(NSArray*)getAllScores;
 +(NSArray *)getScoreByCategory:(NSString *)category;
 @end

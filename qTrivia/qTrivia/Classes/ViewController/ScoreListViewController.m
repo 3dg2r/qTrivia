@@ -31,16 +31,16 @@
     
     int score = [self.score intValue];
     int bonusScore = [self.bonusScore intValue];
-    int totScore = score + bonusScore;
+    totScore = score + bonusScore;
     self.scoreLabel.text = [NSString stringWithFormat:@"%d",totScore];
     
     self.tableView.layer.borderColor = [UIColor colorWithRed:(CGFloat)(86/255.0f) green:(CGFloat)(171/255.0f) blue:(CGFloat)(8/255.0f) alpha:1].CGColor;
     self.tableView.layer.borderWidth = 4;
     self.tableView.layer.cornerRadius = 5;
     self.dicToBeSave = [[NSMutableDictionary alloc]init];
-    [self.dicToBeSave setObject:[self.categoryDic objectForKey:@"unique_id"] forKey:@"category_id"];
+    [self.dicToBeSave setObject:[self.categoryDic objectForKey:@"title"] forKey:@"category_id"];
     [self.dicToBeSave setObject:[NSString stringWithFormat:@"%d",totScore] forKey:@"score"];
-    self.arrayOfScores = [FMDBManager getScoreByCategory:[self.categoryDic objectForKey:@"unique_id"]];
+    self.arrayOfScores = [FMDBManager getScoreByCategory:[self.categoryDic objectForKey:@"title"]];
     [self.tableView reloadData];
 	// Do any additional setup after loading the view.
 }
@@ -80,10 +80,15 @@
    
     NSString *nameOfUser = [name copy];
     [self.dicToBeSave setObject:nameOfUser forKey:@"name"];
-    if ([FMDBManager addHighScoreToLeaderBoard:self.dicToBeSave]) {
-        self.arrayOfScores = [FMDBManager getScoreByCategory:[self.categoryDic objectForKey:@"unique_id"]];
+    NSNumber *numberOfScore = [NSNumber numberWithInt:totScore];
+    if ([FMDBManager addHighScoreToLeaderBoard:self.dicToBeSave withScore:numberOfScore]) {
+        self.arrayOfScores = [FMDBManager getScoreByCategory:[self.categoryDic objectForKey:@"title"]];
         [self.tableView reloadData];
     }
+    [view removeFromSuperview];
+}
+
+-(void)didPressedBackButton:(SaveToLeaderboardView *)view {
     [view removeFromSuperview];
 }
 
@@ -102,7 +107,7 @@
         
         cell = [array objectAtIndex: 0];
     }
-    cell.scoreLabel.text = [[self.arrayOfScores objectAtIndex:indexPath.row]objectForKey:@"score"];
+    cell.scoreLabel.text = [[[self.arrayOfScores objectAtIndex:indexPath.row]objectForKey:@"score"] stringValue];
     cell.nameLabel.text = [[self.arrayOfScores objectAtIndex:indexPath.row]objectForKey:@"name"];
     
     return cell;

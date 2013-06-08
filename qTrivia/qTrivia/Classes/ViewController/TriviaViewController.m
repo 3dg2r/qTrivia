@@ -70,7 +70,7 @@
     score = 0;
     numOfLife = NUMOFLIFE;
     
-    self.scoreLabel.text = @"";
+    self.scoreLabel.text = @"0";
     
     switch (self.gameMode) {
         case GameModeTimeAttack:
