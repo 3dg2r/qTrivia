@@ -15,6 +15,7 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic,retain) NSMutableArray *arrayOfScores;
+@property (weak, nonatomic) IBOutlet UIButton *categoryButton;
 
 @property (nonatomic,retain) NSArray *categoryList;
 @end

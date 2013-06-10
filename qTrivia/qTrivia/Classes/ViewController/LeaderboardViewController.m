@@ -49,7 +49,7 @@
 }
 
 -(void)didSelectCategory:(SelectCategory *)view andCategoryID:(NSString *)title {
-    
+    [self.categoryButton setTitle:title forState:UIControlStateNormal];
     [self.arrayOfScores removeAllObjects];
     if ([title isEqualToString:@"All Category"]) {
         self.arrayOfScores = [[FMDBManager getAllScores]mutableCopy];
@@ -65,6 +65,7 @@
 - (void)viewDidUnload {
     [self setTableView:nil];
     
+    [self setCategoryButton:nil];
     [super viewDidUnload];
 }
 
