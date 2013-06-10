@@ -21,13 +21,45 @@
     self.tableView.layer.borderColor = [UIColor colorWithRed:(CGFloat)(86/255.0f) green:(CGFloat)(171/255.0f) blue:(CGFloat)(8/255.0f) alpha:1].CGColor;
     self.tableView.layer.borderWidth = 4;
     self.tableView.layer.cornerRadius = 5;
-    
-    self.arrayOfScores = [FMDBManager getAllScores];
+    self.categoryList = [PlistHelper getArray:@"CategoryList"];
+    self.arrayOfScores = [[FMDBManager getAllScores]mutableCopy];
     [self.tableView reloadData];
 	// Do any additional setup after loading the view.
 }
 - (IBAction)backButtonPressed:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
+}
+#pragma mark - Select category button and delegate
+- (IBAction)selectCategoryButtonPressed:(id)sender {
+    NSMutableArray *categoryList = [[NSMutableArray alloc]init];
+    [categoryList addObject:[NSString stringWithFormat:@"All Category"]];
+    for (NSDictionary *dic in self.categoryList) {
+        [categoryList addObject:[dic objectForKey:@"title"]];
+    }
+    
+    NSArray* array = [[NSBundle mainBundle] loadNibNamed:@"SelectCategory" owner:nil options:nil];
+    SelectCategory * popupView = [array objectAtIndex: 0];
+    popupView.delegate = self;
+    popupView.categoryList = categoryList;
+    popupView.tag = 1;
+    popupView.frame = self.view.frame;
+    popupView.center = self.view.center;
+    [self.view addSubview:popupView];
+    [popupView show];
+}
+
+-(void)didSelectCategory:(SelectCategory *)view andCategoryID:(NSString *)title {
+    
+    [self.arrayOfScores removeAllObjects];
+    if ([title isEqualToString:@"All Category"]) {
+        self.arrayOfScores = [[FMDBManager getAllScores]mutableCopy];
+    }
+    else {
+        self.arrayOfScores = [[FMDBManager getScoreByCategory:title] mutableCopy];
+    }
+    [self.tableView reloadData];
+    [view hide];
+    [view removeFromSuperview];
 }
 
 - (void)viewDidUnload {

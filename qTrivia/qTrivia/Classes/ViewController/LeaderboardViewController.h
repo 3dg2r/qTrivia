@@ -9,9 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "LeaderboardCell.h"
 #import "FMDBManager.h"
-
-@interface LeaderboardViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
+#import "SelectCategory.h"
+#import "PlistHelper.h"
+@interface LeaderboardViewController : UIViewController <UITableViewDataSource,UITableViewDelegate,SelectCategoryDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (nonatomic,retain) NSArray *arrayOfScores;
+@property (nonatomic,retain) NSMutableArray *arrayOfScores;
+
+@property (nonatomic,retain) NSArray *categoryList;
 @end
