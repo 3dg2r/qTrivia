@@ -127,6 +127,9 @@
     if (timmerCounter < 0) {
         timmerCounter = 0;
     }
+    else {
+        [gameTimer invalidate];
+    }
     if (numOfLife < 0) {
         numOfLife = 0;
     }
@@ -236,7 +239,7 @@
     if (indexOfAnswer == keyOfAnswerPicked) {
         switch (self.gameMode) {
             case GameModeSurvival:
-                timmerCounter += 2.0f;
+                timmerCounter += 1.0f;
                 break;
             default:
                 break;
