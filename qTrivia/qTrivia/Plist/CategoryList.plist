@@ -22,5 +22,15 @@
 		<key>numberOfPlist</key>
 		<string>1</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>Movies</string>
+		<key>unique_id</key>
+		<string>MovieCategory</string>
+		<key>image_name</key>
+		<string></string>
+		<key>numberOfPlist</key>
+		<string>1</string>
+	</dict>
 </array>
 </plist>
