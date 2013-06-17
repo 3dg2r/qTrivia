@@ -56,7 +56,7 @@
     puase = NO;
 }
 
-#pragma mark - restart Button Pressed 
+#pragma mark - restart Button Pressed
 
 -(void)restart {
     [self.categoryArray removeAllObjects];
@@ -158,23 +158,23 @@
 
 -(void)setUpNewQuestion {
     if (counter == self.categoryArray.count) {
-        [self performSegueWithIdentifier:@"goToScoreVC" sender:self];
+        [self.categoryArray shuffle];
+        counter = 0;
     }
-    else {
-        [self.triviaAnswer1 setBackgroundImage:[UIImage imageNamed:@"button_blueline.png"] forState:UIControlStateNormal];
-        [self.triviaAnswer2 setBackgroundImage:[UIImage imageNamed:@"button_blueline.png"] forState:UIControlStateNormal];
-        [self.triviaAnswer3 setBackgroundImage:[UIImage imageNamed:@"button_blueline.png"] forState:UIControlStateNormal];
-        [self.triviaAnswer4 setBackgroundImage:[UIImage imageNamed:@"button_blueline.png"] forState:UIControlStateNormal];
-        NSMutableArray *arrayOfImage = [[[self.categoryArray objectAtIndex:counter] objectForKey:@"image_array"]mutableCopy];
-        [arrayOfImage shuffle];
-        
-        self.triviaImage1.image = [UIImage imageNamed:[arrayOfImage objectAtIndex:0]];
-        self.triviaImage2.image = [UIImage imageNamed:[arrayOfImage objectAtIndex:1]];
-        self.triviaImage3.image = [UIImage imageNamed:[arrayOfImage objectAtIndex:2]];
-        self.triviaImage4.image = [UIImage imageNamed:[arrayOfImage objectAtIndex:3]];
-        [self setUpAnswerArrays];
-        counter ++;
-    }
+    [self.triviaAnswer1 setBackgroundImage:[UIImage imageNamed:@"button_blueline.png"] forState:UIControlStateNormal];
+    [self.triviaAnswer2 setBackgroundImage:[UIImage imageNamed:@"button_blueline.png"] forState:UIControlStateNormal];
+    [self.triviaAnswer3 setBackgroundImage:[UIImage imageNamed:@"button_blueline.png"] forState:UIControlStateNormal];
+    [self.triviaAnswer4 setBackgroundImage:[UIImage imageNamed:@"button_blueline.png"] forState:UIControlStateNormal];
+    NSMutableArray *arrayOfImage = [[[self.categoryArray objectAtIndex:counter] objectForKey:@"image_array"]mutableCopy];
+    [arrayOfImage shuffle];
+    
+    self.triviaImage1.image = [UIImage imageNamed:[arrayOfImage objectAtIndex:0]];
+    self.triviaImage2.image = [UIImage imageNamed:[arrayOfImage objectAtIndex:1]];
+    self.triviaImage3.image = [UIImage imageNamed:[arrayOfImage objectAtIndex:2]];
+    self.triviaImage4.image = [UIImage imageNamed:[arrayOfImage objectAtIndex:3]];
+    [self setUpAnswerArrays];
+    counter ++;
+    
 }
 
 -(void)setUpAnswerArrays {
@@ -213,7 +213,7 @@
     [popupView show];
 }
 
-#pragma mark - pause menu delegate 
+#pragma mark - pause menu delegate
 
 -(void)didPressedResumeButton:(PauseMenuView *)view {
     [view removeFromSuperview];
@@ -272,6 +272,11 @@
             default:
                 break;
         }
+        score -= 5;
+        if (score < 0) {
+            score = 0;
+        }
+        self.scoreLabel.text = [NSString stringWithFormat:@"%d",score];
     }
     [self setUpNewQuestion];
 }
