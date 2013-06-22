@@ -16,6 +16,7 @@
 }
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (nonatomic,copy) NSString *score;
+@property (nonatomic) int gameMode;
 @property (nonatomic,copy) NSString *bonusScore;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, retain)NSDictionary *categoryDic;

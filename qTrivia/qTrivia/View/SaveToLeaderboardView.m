@@ -21,6 +21,7 @@
 
 - (IBAction)didPressedSubmitButton:(id)sender {
     [self hide];
+    self.name = self.textField.text;
     if (!self.name) {
         self.name = @" ";
     }

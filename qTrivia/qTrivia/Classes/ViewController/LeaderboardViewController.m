@@ -21,8 +21,12 @@
     self.tableView.layer.borderColor = [UIColor colorWithRed:(CGFloat)(86/255.0f) green:(CGFloat)(171/255.0f) blue:(CGFloat)(8/255.0f) alpha:1].CGColor;
     self.tableView.layer.borderWidth = 4;
     self.tableView.layer.cornerRadius = 5;
+    isCategory = NO;
     self.categoryList = [PlistHelper getArray:@"CategoryList"];
     self.arrayOfScores = [[FMDBManager getAllScores]mutableCopy];
+    self.gameModeList = [PlistHelper getArray:@"GameModeList"];
+    gameMOde = -1;
+    categoryID = @"All Category";
     [self.tableView reloadData];
 	// Do any additional setup after loading the view.
 }
@@ -31,6 +35,7 @@
 }
 #pragma mark - Select category button and delegate
 - (IBAction)selectCategoryButtonPressed:(id)sender {
+    isCategory = YES;
     NSMutableArray *categoryList = [[NSMutableArray alloc]init];
     [categoryList addObject:[NSString stringWithFormat:@"All Category"]];
     for (NSDictionary *dic in self.categoryList) {
@@ -47,16 +52,57 @@
     [self.view addSubview:popupView];
     [popupView show];
 }
+- (IBAction)didPressedGameModeButton:(id)sender {
+    isCategory = NO;
+    NSMutableArray *game_mode_list = [[NSMutableArray alloc]init];
+    for (NSDictionary *dic in self.gameModeList) {
+        [game_mode_list addObject:[dic objectForKey:@"title"]];
+    }
+    
+    NSArray* array = [[NSBundle mainBundle] loadNibNamed:@"SelectCategory" owner:nil options:nil];
+    SelectCategory * popupView = [array objectAtIndex: 0];
+    popupView.delegate = self;
+    popupView.categoryList = game_mode_list;
+    popupView.tag = 1;
+    popupView.frame = self.view.frame;
+    popupView.center = self.view.center;
+    [self.view addSubview:popupView];
+    [popupView show];
+    
+}
 
 -(void)didSelectCategory:(SelectCategory *)view andCategoryID:(NSString *)title {
-    [self.categoryButton setTitle:title forState:UIControlStateNormal];
-    [self.arrayOfScores removeAllObjects];
-    if ([title isEqualToString:@"All Category"]) {
-        self.arrayOfScores = [[FMDBManager getAllScores]mutableCopy];
+    if (isCategory) {
+        [self.categoryButton setTitle:title forState:UIControlStateNormal];
+        [self.arrayOfScores removeAllObjects];
+        categoryID = title;
     }
     else {
-        self.arrayOfScores = [[FMDBManager getScoreByCategory:title] mutableCopy];
+        [self.gameModeButton setTitle:title forState:UIControlStateNormal];
+        [self.arrayOfScores removeAllObjects];
+        for (NSDictionary *dictionary in self.gameModeList) {
+            NSString *titleOfGameMode = [dictionary objectForKey:@"title"];
+            if ([titleOfGameMode isEqualToString:title]) {
+                gameMOde = [[dictionary objectForKey:@"gameModeKey"] intValue];
+                break;
+            }
+        }
     }
+
+    NSNumber *game_mode = [NSNumber numberWithInt:gameMOde];
+    if ([categoryID isEqualToString:@"All Category"] && gameMOde == -1) {
+        self.arrayOfScores = [[FMDBManager getAllScores]mutableCopy];
+    }
+    else if(gameMOde == -1){
+        self.arrayOfScores = [[FMDBManager getScoreByCategory:categoryID] mutableCopy];
+    }
+    else if ([categoryID isEqualToString:@"All Category"]) {
+        self.arrayOfScores = [[FMDBManager getScoreByGameMode:game_mode] mutableCopy];
+    }
+    else {
+        self.arrayOfScores = [[FMDBManager getScoreByCategory:categoryID andGameMode:game_mode] mutableCopy];
+    }
+    
     [self.tableView reloadData];
     [view hide];
     [view removeFromSuperview];
@@ -66,6 +112,7 @@
     [self setTableView:nil];
     
     [self setCategoryButton:nil];
+    [self setGameModeButton:nil];
     [super viewDidUnload];
 }
 

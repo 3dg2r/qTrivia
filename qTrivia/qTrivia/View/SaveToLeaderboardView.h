@@ -22,6 +22,7 @@
     CGRect originalFrame;
 }
 
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 - (void)show;
 - (void)hide;
 @property (nonatomic) BOOL isShown;

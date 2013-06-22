@@ -40,7 +40,8 @@
     self.dicToBeSave = [[NSMutableDictionary alloc]init];
     [self.dicToBeSave setObject:[self.categoryDic objectForKey:@"title"] forKey:@"category_id"];
     [self.dicToBeSave setObject:[NSString stringWithFormat:@"%d",totScore] forKey:@"score"];
-    self.arrayOfScores = [FMDBManager getScoreByCategory:[self.categoryDic objectForKey:@"title"]];
+    NSNumber *gameMode = [NSNumber numberWithInt:self.gameMode];
+    self.arrayOfScores = [FMDBManager getScoreByCategory:[self.categoryDic objectForKey:@"title"] andGameMode:gameMode];
     [self.tableView reloadData];
 	// Do any additional setup after loading the view.
 }
@@ -81,8 +82,9 @@
     NSString *nameOfUser = [name copy];
     [self.dicToBeSave setObject:nameOfUser forKey:@"name"];
     NSNumber *numberOfScore = [NSNumber numberWithInt:totScore];
-    if ([FMDBManager addHighScoreToLeaderBoard:self.dicToBeSave withScore:numberOfScore]) {
-        self.arrayOfScores = [FMDBManager getScoreByCategory:[self.categoryDic objectForKey:@"title"]];
+    NSNumber *gameMode = [NSNumber numberWithInt:self.gameMode];
+    if ([FMDBManager addHighScoreToLeaderBoard:self.dicToBeSave withScore:numberOfScore andGameMode:gameMode]) {
+        self.arrayOfScores = [FMDBManager getScoreByCategory:[self.categoryDic objectForKey:@"title"]andGameMode:gameMode];
         [self.tableView reloadData];
     }
     [view removeFromSuperview];

@@ -124,6 +124,7 @@
     ScoreListViewController *controller = segue.destinationViewController;
     controller.score = [NSString stringWithFormat:@"%d",score];
     controller.categoryDic = self.categoryDictionary;
+    controller.gameMode = self.gameMode;
     if (timmerCounter < 0) {
         timmerCounter = 0;
     }

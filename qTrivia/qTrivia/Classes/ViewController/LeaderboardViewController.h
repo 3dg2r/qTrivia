@@ -11,11 +11,17 @@
 #import "FMDBManager.h"
 #import "SelectCategory.h"
 #import "PlistHelper.h"
-@interface LeaderboardViewController : UIViewController <UITableViewDataSource,UITableViewDelegate,SelectCategoryDelegate>
+@interface LeaderboardViewController : UIViewController <UITableViewDataSource,UITableViewDelegate,SelectCategoryDelegate> {
+    BOOL isCategory;
+    int gameMOde;
+    NSString *categoryID;
+}
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic,retain) NSMutableArray *arrayOfScores;
 @property (weak, nonatomic) IBOutlet UIButton *categoryButton;
+@property (weak, nonatomic) IBOutlet UIButton *gameModeButton;
 
 @property (nonatomic,retain) NSArray *categoryList;
+@property (nonatomic,retain) NSArray *gameModeList;
 @end
