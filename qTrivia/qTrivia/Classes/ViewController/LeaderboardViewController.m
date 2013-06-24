@@ -133,7 +133,14 @@
     }
     cell.scoreLabel.text = [[[self.arrayOfScores objectAtIndex:indexPath.row]objectForKey:@"score"] stringValue];
     cell.nameLabel.text = [[self.arrayOfScores objectAtIndex:indexPath.row]objectForKey:@"name"];
-    
+    cell.categoryLabel.text = [[self.arrayOfScores objectAtIndex:indexPath.row]objectForKey:@"category_id"];
+    for (NSDictionary *dic in self.gameModeList) {
+        NSInteger gameMode = [[dic objectForKey:@"gameModeKey"] integerValue];
+        if (gameMode == [[[self.arrayOfScores objectAtIndex:indexPath.row] objectForKey:@"game_mode"] integerValue]) {
+            cell.gameModeLabel.text = [dic objectForKey:@"title"];
+            break;
+        }
+    }
     return cell;
 }
 

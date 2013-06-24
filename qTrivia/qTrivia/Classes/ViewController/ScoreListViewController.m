@@ -9,9 +9,9 @@
 #import "ScoreListViewController.h"
 #import "CategoryListViewController.h"
 #import <QuartzCore/QuartzCore.h>
-
+#import "PlistHelper.h"
 @interface ScoreListViewController ()
-
+@property (nonatomic,retain) NSArray *gameModeList;
 @end
 
 @implementation ScoreListViewController
@@ -41,6 +41,7 @@
     [self.dicToBeSave setObject:[self.categoryDic objectForKey:@"title"] forKey:@"category_id"];
     [self.dicToBeSave setObject:[NSString stringWithFormat:@"%d",totScore] forKey:@"score"];
     NSNumber *gameMode = [NSNumber numberWithInt:self.gameMode];
+    self.gameModeList = [PlistHelper getArray:@"GameModeList"];
     self.arrayOfScores = [FMDBManager getScoreByCategory:[self.categoryDic objectForKey:@"title"] andGameMode:gameMode];
     [self.tableView reloadData];
 	// Do any additional setup after loading the view.
@@ -86,6 +87,7 @@
     if ([FMDBManager addHighScoreToLeaderBoard:self.dicToBeSave withScore:numberOfScore andGameMode:gameMode]) {
         self.arrayOfScores = [FMDBManager getScoreByCategory:[self.categoryDic objectForKey:@"title"]andGameMode:gameMode];
         [self.tableView reloadData];
+        self.saveButton.hidden = YES;
     }
     [view removeFromSuperview];
 }
@@ -111,7 +113,14 @@
     }
     cell.scoreLabel.text = [[[self.arrayOfScores objectAtIndex:indexPath.row]objectForKey:@"score"] stringValue];
     cell.nameLabel.text = [[self.arrayOfScores objectAtIndex:indexPath.row]objectForKey:@"name"];
-    
+    cell.categoryLabel.text = [[self.arrayOfScores objectAtIndex:indexPath.row]objectForKey:@"category_id"];
+    for (NSDictionary *dic in self.gameModeList) {
+        NSInteger gameMOde = [[dic objectForKey:@"gameModeKey"] integerValue];
+        if (gameMOde == [[[self.arrayOfScores objectAtIndex:indexPath.row] objectForKey:@"game_mode"] integerValue]) {
+            cell.gameModeLabel.text = [dic objectForKey:@"title"];
+            break;
+        }
+    }
     return cell;
 }
 
@@ -122,6 +131,7 @@
 - (void)viewDidUnload {
     [self setScoreLabel:nil];
     [self setTableView:nil];
+    [self setSaveButton:nil];
     [super viewDidUnload];
 }
 @end

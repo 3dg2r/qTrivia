@@ -20,7 +20,7 @@ typedef enum {
     int counter,streak,score,numOfLife;
     float timmerCounter;
     NSTimer *gameTimer;
-    BOOL puase;
+    BOOL puase,alreadyPlayLast10Sec;
 }
 
 @property (strong, nonatomic) NSDictionary *categoryDictionary;

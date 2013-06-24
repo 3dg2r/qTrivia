@@ -36,6 +36,8 @@
         [dictionary setObject:[rs stringForColumn: @"category_id"] forKey:@"category_id"];
         [dictionary setObject:[rs stringForColumn: @"name"] forKey:@"name"];
         NSNumber *number = [NSNumber numberWithInt:[rs intForColumn: @"score"]];
+        NSNumber *gameModenumber = [NSNumber numberWithInt:[rs intForColumn: @"game_mode"]];
+        [dictionary setObject:gameModenumber forKey:@"game_mode"];
         [dictionary setObject:number forKey:@"score"];
         [scoreArray addObject: dictionary];
     }
@@ -55,6 +57,8 @@
         [dictionary setObject:[rs stringForColumn: @"category_id"] forKey:@"category_id"];
         [dictionary setObject:[rs stringForColumn: @"name"] forKey:@"name"];
         NSNumber *number = [NSNumber numberWithInt:[rs intForColumn: @"score"]];
+        NSNumber *gameModenumber = [NSNumber numberWithInt:[rs intForColumn: @"game_mode"]];
+        [dictionary setObject:gameModenumber forKey:@"game_mode"];
         [dictionary setObject:number forKey:@"score"];
         [scoreArray addObject: dictionary];
     }
@@ -74,6 +78,8 @@
         [dictionary setObject:[rs stringForColumn: @"category_id"] forKey:@"category_id"];
         [dictionary setObject:[rs stringForColumn: @"name"] forKey:@"name"];
         NSNumber *number = [NSNumber numberWithInt:[rs intForColumn: @"score"]];
+        NSNumber *gameModenumber = [NSNumber numberWithInt:[rs intForColumn: @"game_mode"]];
+        [dictionary setObject:gameModenumber forKey:@"game_mode"];
         [dictionary setObject:number forKey:@"score"];
         [scoreArray addObject: dictionary];
     }
@@ -93,6 +99,8 @@
         [dictionary setObject:[rs stringForColumn: @"category_id"] forKey:@"category_id"];
         [dictionary setObject:[rs stringForColumn: @"name"] forKey:@"name"];
         NSNumber *number = [NSNumber numberWithInt:[rs intForColumn: @"score"]];
+        NSNumber *gameModenumber = [NSNumber numberWithInt:[rs intForColumn: @"game_mode"]];
+        [dictionary setObject:gameModenumber forKey:@"game_mode"];
         [dictionary setObject:number forKey:@"score"];
         [scoreArray addObject: dictionary];
     }

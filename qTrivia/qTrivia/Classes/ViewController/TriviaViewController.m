@@ -10,9 +10,10 @@
 #import "PlistHelper.h"
 #import <QuartzCore/QuartzCore.h>
 #import "ScoreListViewController.h"
-
+#import "SoundEngine.h"
 #define TIMER 45.0f
-#define NUMOFLIFE 3
+#define NUMOFLIFE_RELAX 3
+#define NUMOFLIFE_SURVIVAL 1
 
 
 @interface TriviaViewController ()
@@ -68,7 +69,7 @@
     timmerCounter = TIMER;
     streak = 1;
     score = 0;
-    numOfLife = NUMOFLIFE;
+    
     
     self.scoreLabel.text = @"0";
     
@@ -80,12 +81,12 @@
             [self startCountdown];
             break;
         case GameModeSurvival:
-            self.numberOfLifesTextLabel.hidden = YES;
-            self.numberOfLife.hidden = YES;
-            self.timerLabel.text = [NSString stringWithFormat:@"%.2f",timmerCounter];
-            [self startCountdown];
+            numOfLife = NUMOFLIFE_SURVIVAL;
+            self.timerLabel.hidden = YES;
+            self.numberOfLife.text = [NSString stringWithFormat:@"%d",numOfLife];
             break;
         case GameModeRelax:
+            numOfLife = NUMOFLIFE_RELAX;
             self.timerLabel.hidden = YES;
             self.numberOfLife.text = [NSString stringWithFormat:@"%d",numOfLife];
             break;
@@ -100,7 +101,8 @@
 
 - (void)startCountdown
 {
-    gameTimer = [NSTimer scheduledTimerWithTimeInterval:0.03
+    [[SoundEngine sharedEngine]playLoopEffect:@"timer1sec.mp3" withLoop:33];
+    gameTimer = [NSTimer scheduledTimerWithTimeInterval:0.02f
                                                  target:self
                                                selector:@selector(advanceTimer:)
                                                userInfo:nil
@@ -110,15 +112,19 @@
 - (void)advanceTimer:(NSTimer *)timer
 {
     if (!puase) {
-        timmerCounter -= 0.03f;
+        timmerCounter -= 0.02f;
+        if (timmerCounter <= 10.0f && !alreadyPlayLast10Sec) {
+            alreadyPlayLast10Sec = YES;
+            [[SoundEngine sharedEngine]playLoopEffect:@"timerLast10Sec.mp3" withLoop:1];
+        }
         self.timerLabel.text = [NSString stringWithFormat:@"%.2f",timmerCounter];
         if (timmerCounter <= 0) {
+            [[SoundEngine sharedEngine]playSimpleEffect:@"blast.mp3"];
             [timer invalidate];
             [self performSegueWithIdentifier:@"goToScoreVC" sender:self];
         }
     }
 }
-
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     ScoreListViewController *controller = segue.destinationViewController;
@@ -142,7 +148,7 @@
             controller.bonusScore = [NSString stringWithFormat:@"%d",bonusScore *10];
             break;
         case GameModeSurvival:
-            controller.bonusScore = [NSString stringWithFormat:@"%d",bonusScore *10];
+            controller.bonusScore = [NSString stringWithFormat:@"%d",numOfLife *100];
             break;
         case GameModeRelax:
             controller.bonusScore = [NSString stringWithFormat:@"%d",numOfLife *100];
@@ -222,11 +228,13 @@
 }
 
 -(void)didPressedRestartButton:(PauseMenuView *)view {
+    [gameTimer invalidate];
     [view removeFromSuperview];
     [self restart];
 }
 
 -(void)didPressedMenuButton:(PauseMenuView *)view {
+    [gameTimer invalidate];
     [view removeFromSuperview];
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
@@ -238,35 +246,28 @@
     NSInteger keyOfAnswerPicked = [[dic objectForKey:@"id"] integerValue];
     NSInteger indexOfAnswer = [[[self.categoryArray objectAtIndex:counter-1] objectForKey:@"key_answer"] integerValue];
     if (indexOfAnswer == keyOfAnswerPicked) {
-        switch (self.gameMode) {
-            case GameModeSurvival:
-                timmerCounter += 1.0f;
-                break;
-            default:
-                break;
-        }
+         [[SoundEngine sharedEngine]playSimpleEffect:@"right.mp3"];
         [button setBackgroundImage:[UIImage imageNamed:@"button_blue.png"] forState:UIControlStateHighlighted];
         score += 10*streak;
         self.scoreLabel.text = [NSString stringWithFormat:@"%d",score];
         streak += 1;
     }
     else {
+        [[SoundEngine sharedEngine]playSimpleEffect:@"wrong.mp3"];
         streak = 1;
         [button setBackgroundImage:[UIImage imageNamed:@"button_red.png"] forState:UIControlStateHighlighted];
         switch (self.gameMode) {
             case GameModeTimeAttack:
-                timmerCounter -= 1.0f;
                 break;
             case GameModeSurvival:
-                timmerCounter -= 1.0f;
-                break;
-            case GameModeRelax:
                 numOfLife -= 1;
                 if (numOfLife == 0) {
                     [self performSegueWithIdentifier:@"goToScoreVC" sender:self];
                 }
-                else if (numOfLife == 1) {
-                    self.skipButton.hidden = YES;
+            case GameModeRelax:
+                numOfLife -= 1;
+                if (numOfLife == 0) {
+                    [self performSegueWithIdentifier:@"goToScoreVC" sender:self];
                 }
                 self.numberOfLife.text = [NSString stringWithFormat:@"%d",numOfLife];
                 break;

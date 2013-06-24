@@ -22,4 +22,5 @@
 @property (nonatomic, retain)NSDictionary *categoryDic;
 @property (nonatomic,retain) NSMutableDictionary *dicToBeSave;
 @property (nonatomic,retain) NSArray *arrayOfScores;
+@property (weak, nonatomic) IBOutlet UIButton *saveButton;
 @end
