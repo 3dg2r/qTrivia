@@ -8,7 +8,7 @@
 		<key>unique_id</key>
 		<string>SportCategory</string>
 		<key>image_name</key>
-		<string></string>
+		<string>sports(nba)_logo.png</string>
 		<key>numberOfPlist</key>
 		<string>1</string>
 	</dict>

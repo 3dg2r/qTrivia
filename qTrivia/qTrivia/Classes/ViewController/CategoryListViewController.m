@@ -48,7 +48,7 @@
         cell = [array objectAtIndex: 0];
     }
     cell.categoryTitle.text = [[self.categoryList objectAtIndex:indexPath.row] objectForKey:@"title"];
-    
+    cell.categoryImage.image = [UIImage imageNamed:[[self.categoryList objectAtIndex:indexPath.row] objectForKey:@"image_name"]];
     return cell;
 }
 

@@ -41,6 +41,7 @@
 		7AF0A1B717578F26007F3E71 /* PlaceCategory_1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7AF0A1B617578F26007F3E71 /* PlaceCategory_1.plist */; };
 		7AF0A1B917578F43007F3E71 /* PlaceCategoryAnswer_1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7AF0A1B817578F43007F3E71 /* PlaceCategoryAnswer_1.plist */; };
 		7AFB0A851775C31F00C61EE6 /* GameModeList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7AFB0A841775C31F00C61EE6 /* GameModeList.plist */; };
+		7AFB0A891778A3F800C61EE6 /* sports(nba)_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFB0A881778A3F800C61EE6 /* sports(nba)_logo.png */; };
 		7AFFF84B174FCC7000C1D4D8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFFF84A174FCC7000C1D4D8 /* UIKit.framework */; };
 		7AFFF84D174FCC7000C1D4D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFFF84C174FCC7000C1D4D8 /* Foundation.framework */; };
 		7AFFF84F174FCC7000C1D4D8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFFF84E174FCC7000C1D4D8 /* CoreGraphics.framework */; };
@@ -699,6 +700,7 @@
 		7AF0A1B617578F26007F3E71 /* PlaceCategory_1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PlaceCategory_1.plist; sourceTree = "<group>"; };
 		7AF0A1B817578F43007F3E71 /* PlaceCategoryAnswer_1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PlaceCategoryAnswer_1.plist; sourceTree = "<group>"; };
 		7AFB0A841775C31F00C61EE6 /* GameModeList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GameModeList.plist; sourceTree = "<group>"; };
+		7AFB0A881778A3F800C61EE6 /* sports(nba)_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sports(nba)_logo.png"; sourceTree = "<group>"; };
 		7AFFF847174FCC7000C1D4D8 /* qTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AFFF84A174FCC7000C1D4D8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7AFFF84C174FCC7000C1D4D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -1878,6 +1880,7 @@
 		C35ECD46175481E700EE371B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7AFB0A881778A3F800C61EE6 /* sports(nba)_logo.png */,
 				C39262C31777EB0000CD7EC8 /* Sounds */,
 				C3667DE41766FA66000EF4CE /* Movies */,
 				7A72B3A8175B619300D21A4A /* Places */,
@@ -2936,6 +2939,7 @@
 				C39262CB1777EB0000CD7EC8 /* timer1sec.mp3 in Resources */,
 				C39262CC1777EB0000CD7EC8 /* timerLast10Sec.mp3 in Resources */,
 				C39262CD1777EB0000CD7EC8 /* wrong.mp3 in Resources */,
+				7AFB0A891778A3F800C61EE6 /* sports(nba)_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
