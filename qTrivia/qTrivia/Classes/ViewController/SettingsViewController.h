@@ -10,4 +10,5 @@
 
 @interface SettingsViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UISwitch *soundSwitch;
 @end

@@ -20,7 +20,11 @@
         [helper initializeDatabaseWithXMLName:@"qTrivia"];
     }
 
-    
+    if (![[NSUserDefaults standardUserDefaults]boolForKey:@"firstRun"]) {
+        [[NSUserDefaults standardUserDefaults]setBool:YES forKey:@"firstRun"];
+        [[NSUserDefaults standardUserDefaults]setBool:YES forKey:@"hasSound"];
+        [[NSUserDefaults standardUserDefaults]synchronize];
+    }
     return YES;
 }
 							

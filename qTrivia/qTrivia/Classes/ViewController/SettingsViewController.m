@@ -17,10 +17,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.soundSwitch setOn:[[NSUserDefaults standardUserDefaults] boolForKey:@"hasSound"]];
 	// Do any additional setup after loading the view.
 }
 - (IBAction)backButtonPressed:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
+- (IBAction)switchToggle:(id)sender {
+    if ([sender isOn]) {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"hasSound"];
+    }
+    else {
+        [[NSUserDefaults standardUserDefaults]setBool:NO forKey:@"hasSound"];
+    }
+    [[NSUserDefaults standardUserDefaults]synchronize];
+}
 
+- (void)viewDidUnload {
+    [self setSoundSwitch:nil];
+    [super viewDidUnload];
+}
 @end

@@ -101,7 +101,10 @@
 
 - (void)startCountdown
 {
-    [[SoundEngine sharedEngine]playLoopEffect:@"timer1sec.mp3" withLoop:33];
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"hasSound"]) {
+        [[SoundEngine sharedEngine]playLoopEffect:@"timer1sec.mp3" withLoop:33];
+    }
+    
     gameTimer = [NSTimer scheduledTimerWithTimeInterval:0.02f
                                                  target:self
                                                selector:@selector(advanceTimer:)
@@ -115,11 +118,17 @@
         timmerCounter -= 0.02f;
         if (timmerCounter <= 10.0f && !alreadyPlayLast10Sec) {
             alreadyPlayLast10Sec = YES;
-            [[SoundEngine sharedEngine]playLoopEffect:@"timerLast10Sec.mp3" withLoop:1];
+            if ([[NSUserDefaults standardUserDefaults] boolForKey:@"hasSound"]) {
+                [[SoundEngine sharedEngine]playLoopEffect:@"timerLast10Sec.mp3" withLoop:1];
+            }
+            
         }
         self.timerLabel.text = [NSString stringWithFormat:@"%.2f",timmerCounter];
         if (timmerCounter <= 0) {
-            [[SoundEngine sharedEngine]playSimpleEffect:@"blast.mp3"];
+            if ([[NSUserDefaults standardUserDefaults] boolForKey:@"hasSound"]) {
+                [[SoundEngine sharedEngine]playSimpleEffect:@"blast.mp3"];
+            }
+            
             [timer invalidate];
             [self performSegueWithIdentifier:@"goToScoreVC" sender:self];
         }
@@ -246,14 +255,20 @@
     NSInteger keyOfAnswerPicked = [[dic objectForKey:@"id"] integerValue];
     NSInteger indexOfAnswer = [[[self.categoryArray objectAtIndex:counter-1] objectForKey:@"key_answer"] integerValue];
     if (indexOfAnswer == keyOfAnswerPicked) {
-         [[SoundEngine sharedEngine]playSimpleEffect:@"right.mp3"];
+        if ([[NSUserDefaults standardUserDefaults]boolForKey:@"hasSound"]) {
+            [[SoundEngine sharedEngine]playSimpleEffect:@"right.mp3"];
+        }
+         
         [button setBackgroundImage:[UIImage imageNamed:@"button_blue.png"] forState:UIControlStateHighlighted];
         score += 10*streak;
         self.scoreLabel.text = [NSString stringWithFormat:@"%d",score];
         streak += 1;
     }
     else {
-        [[SoundEngine sharedEngine]playSimpleEffect:@"wrong.mp3"];
+        if ([[NSUserDefaults standardUserDefaults]boolForKey:@"hasSound"]) {
+           [[SoundEngine sharedEngine]playSimpleEffect:@"wrong.mp3"];
+        }
+        
         streak = 1;
         [button setBackgroundImage:[UIImage imageNamed:@"button_red.png"] forState:UIControlStateHighlighted];
         switch (self.gameMode) {
